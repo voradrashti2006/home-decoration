@@ -1,12 +1,10 @@
-
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-/* ====================== Header ===================== */
 .header {
     height: 70px;
     background: #fff;
@@ -17,48 +15,14 @@
     border-bottom: 1px solid #ddd;
 }
 
-/* .logo {
+
+.logo {
     font-size: 26px;
     font-weight: bold;
 }
 
 .logo span {
     color: #888;
-} */
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-}
-
-.logo-icon {
-    font-size: 28px;
-    color: #333;
-    /* Icon color */
-    padding-top: 5px;
-}
-
-.logo-text {
-    font-size: 26px;
-    font-weight: bold;
-    color: #333;
-}
-
-.logo-text span {
-    color: #888;
-    /* Different color for "Aura" */
-}
-
-.logo:hover .logo-icon {
-    color: #ff9900;
-    /* Icon color change on hover */
-}
-
-.logo:hover .logo-text span {
-    color: #ff9900;
-    /* Text highlight on hover */
 }
 
 
@@ -98,9 +62,12 @@
     transition: 0.4s ease;
 }
 
+
+
 #menu-toggle {
     display: none;
 }
+
 
 .side-menu {
     position: fixed;
@@ -112,15 +79,16 @@
     padding-top: 80px;
     padding-left: 25px;
     transition: 0.3s ease;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
+
 #menu-toggle:checked~.side-menu {
     right: 0;
 }
+
 
 .close-btn {
     position: absolute;
@@ -130,6 +98,7 @@
     cursor: pointer;
 }
 
+
 .side-menu a {
     text-decoration: none;
     color: #333;
@@ -138,16 +107,6 @@
     font-weight: 500;
 }
 
-.Drawer {
-    display: flex;
-    justify-content: center;
-    width: 390px;
-}
-
-.Drawer-text p {
-    font-size: 15px;
-    font-weight: 400;
-}
 
 #menu-toggle:checked~.header .hamburger span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 6px);
@@ -161,128 +120,58 @@
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* ===================== RESPONSIVE ====================== */
+
+
+/* ========================= */
+/* RESPONSIVE HEADER */
+/* ========================= */
+
 @media (max-width: 768px) {
+
+    /* Center menu hide */
     .menu {
         display: none;
     }
 
+    /* Right icons hide */
     .right-icons i {
         display: none;
     }
 
+    /* Header layout change */
     .header {
         justify-content: flex-start;
         gap: 15px;
     }
 
+    /* Hamburger LEFT side */
     .hamburger {
         order: -1;
     }
 
+    /* Logo thodu center feel aapse */
     .logo {
         margin-left: 10px;
     }
-}
-
-/* ======================= Hero-Section ================= */
-
-.hero .silder img {
-    width: 100%;
-}
-.slick-prev {
-    left: 25px !important;
-    z-index: 9;
-}
-.slick-next {
-    right: 25px !important;
-}
-.slick-prev,
-.slick-next {
-    width: 50px !important;
-    height: 50px !important;
-    z-index: 10 !important;
-    background: rgba(255, 255, 255, 0.9) !important;
-    border-radius: 50% !important;
-    display: flex !important;
-    top: 45% !important;
-    align-items: center !important;
-    justify-content: center !important;
-    transition: all 0.3s ease !important;
-}
-.slick-prev:hover,
-.slick-next:hover {
-    background: white !important;
-    transform: scale(1.1);
-}
-
-.slick-prev:before,
-.slick-next:before {
-    color: #333 !important;
-    font-size: 24px !important;
-    opacity: 1 !important;
-}
-.silder {
-  position: relative;      
-  width: 100%;
-}
-.silder img {
-  width: 100%;
-  height: 100%;
-}
-.card {
-  position: absolute;    
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  background: #fff;
-  padding: 60px 70px;
-  max-width: 700px;
-  text-align: center;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-}
-.tagline {
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #c79a45;
-  margin-bottom: 20px;
-}
-.card h1 {
-  font-size: 56px;
-  color: #555;
-  font-weight: normal;
-  margin-bottom: 25px;
-  font-family: Georgia, serif;
-}
-.line {
-  width: 60px;
-  height: 1px;
-  background: #aaa;
-  margin: 0 auto 25px;
-}
-.desc {
-  font-size: 18px;
-  color: #888;
-  line-height: 1.6;
-}
+} */
 
 
-/* ====================== Product-Section ================= */
 
-.all-card{
-    display: flex;
-    gap: 30px;
-}
+
+
+
+
+
+
 /* Card */
 .sale-card {
-    position: relative;
-    width: 100%;
-    height: 265px;
-    background: #fffaf6;
-    overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-    padding: 40px;
-    margin-bottom: 20px;
+  position: relative;
+  width: 600px;
+  height: 300px;
+  background: #fffaf6;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  padding: 40px;
 }
 
 /* Text content */
@@ -333,15 +222,10 @@
 
 /* Flower (decorative) */
 .flower {
-    position: absolute;
-    right: -5px;
-    top: 0px;
-    font-size: 97px;
-    transform: rotate(-15deg);
-    opacity: 0.9;
-}
-.flower img {
-    width: 100%;
-    transform: rotate(14deg);
-
+  position: absolute;
+  right: 40px;
+  top: 60px;
+  font-size: 90px;
+  transform: rotate(-15deg);
+  opacity: 0.9;
 }
