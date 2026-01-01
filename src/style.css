@@ -163,69 +163,136 @@
 
 
 
-/* Card */
-.sale-card {
-  position: relative;
-  width: 600px;
-  height: 300px;
-  background: #fffaf6;
-  overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-  padding: 40px;
+
+.product-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px;
 }
 
-/* Text content */
-.content {
-  position: relative;
-  z-index: 2;
+.product-card {
+    width: 260px;
+    text-align: center;
+    position: relative;
 }
 
-.small-text {
-  font-style: italic;
-  color: #777;
-  margin-bottom: 10px;
+.product-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
 }
 
-.content h2 {
-  font-size: 36px;
-  letter-spacing: 3px;
-  color: #555;
-  margin-bottom: 30px;
+.product-card h3 {
+    margin-top: 18px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #333;
 }
 
-/* Discount ribbon */
-.discount {
-  position: relative;
-  background: #ff9fb0;
-  display: inline-block;
-  padding: 11px 40px;
+.category {
+    color: #caa24d;
+    font-style: italic;
+    margin: 6px 0;
 }
 
-.discount span {
-  font-size: 42px;
-  color: white;
-  font-weight: bold;
+.price {
+    font-size: 16px;
+    color: #000;
 }
 
-/* Ribbon cut effect */
-.discount::after {
-  content: "";
-  position: absolute;
-  right: -20px;
-  top: 0;
-  width: 0;
-  height: 0;
-  border-top: 35px solid transparent;
-  border-bottom: 35px solid transparent;
-  border-left: 20px solid #ff9fb0;
+.price .old {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 6px;
 }
 
-/* Flower (decorative) */
-.flower {
-  position: absolute;
-  right: 40px;
-  top: 60px;
-  font-size: 90px;
-  transform: rotate(-15deg);
-  opacity: 0.9;
+.price .new {
+    color: #000;
+    font-weight: bold;
+}
+
+.sale {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #caa24d;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-card {
+    width: 260px;
+    text-align: center;
+    position: relative;
+}
+
+.img-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+/* overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+/* button */
+.overlay a {
+    background: #caa24d;
+    color: #fff;
+    padding: 14px 28px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+/* hover effect */
+.product-card:hover .overlay {
+    opacity: 1;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+/* sale badge same */
+.sale {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #caa24d;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 50%;
+    z-index: 2;
 }

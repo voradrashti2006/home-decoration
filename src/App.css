@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -190,13 +189,16 @@
 .hero .silder img {
     width: 100%;
 }
+
 .slick-prev {
     left: 25px !important;
     z-index: 9;
 }
+
 .slick-next {
     right: 25px !important;
 }
+
 .slick-prev,
 .slick-next {
     width: 50px !important;
@@ -210,6 +212,7 @@
     justify-content: center !important;
     transition: all 0.3s ease !important;
 }
+
 .slick-prev:hover,
 .slick-next:hover {
     background: white !important;
@@ -222,113 +225,129 @@
     font-size: 24px !important;
     opacity: 1 !important;
 }
+
 .silder {
-  position: relative;      
-  width: 100%;
+    position: relative;
+    width: 100%;
 }
+
 .silder img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
+
 .card {
-  position: absolute;    
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  background: #fff;
-  padding: 60px 70px;
-  max-width: 700px;
-  text-align: center;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 60px 70px;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
+
 .tagline {
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #c79a45;
-  margin-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #c79a45;
+    margin-bottom: 20px;
 }
+
 .card h1 {
-  font-size: 56px;
-  color: #555;
-  font-weight: normal;
-  margin-bottom: 25px;
-  font-family: Georgia, serif;
+    font-size: 56px;
+    color: #555;
+    font-weight: normal;
+    margin-bottom: 25px;
+    font-family: Georgia, serif;
 }
+
 .line {
-  width: 60px;
-  height: 1px;
-  background: #aaa;
-  margin: 0 auto 25px;
+    width: 120px;
+    height: 1px;
+    background: #aaa;
+    margin: 0 auto 25px;
 }
+
 .desc {
-  font-size: 18px;
-  color: #888;
-  line-height: 1.6;
+    font-size: 18px;
+    color: #888;
+    line-height: 1.6;
 }
 
 
 /* ====================== Product-Section ================= */
 
-.all-card{
+.all-card {
     display: flex;
-    gap: 30px;
+    gap: 40px;
+    margin-top: 7%;
+    margin-left: 40px;
+    margin-right: 40px;
 }
+
 /* Card */
 .sale-card {
     position: relative;
     width: 100%;
-    height: 265px;
+    height: 260px;
     background: #fffaf6;
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); */
     padding: 40px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 /* Text content */
 .content {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .small-text {
-  font-style: italic;
-  color: #777;
-  margin-bottom: 10px;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 12px;
 }
 
 .content h2 {
-  font-size: 36px;
-  letter-spacing: 3px;
-  color: #555;
-  margin-bottom: 30px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #555;
+    margin-bottom: 30px;
+    font-weight: 600;
+
 }
 
 /* Discount ribbon */
 .discount {
-  position: relative;
-  background: #ff9fb0;
-  display: inline-block;
-  padding: 11px 40px;
+    position: relative;
+    background: #ff9fb0;
+    display: inline-block;
+    padding: 1px 32px;
+    margin-left: -14%;
 }
 
 .discount span {
-  font-size: 42px;
-  color: white;
-  font-weight: bold;
+    font-size: 60px;
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
 }
 
 /* Ribbon cut effect */
 .discount::after {
-  content: "";
-  position: absolute;
-  right: -20px;
-  top: 0;
-  width: 0;
-  height: 0;
-  border-top: 35px solid transparent;
-  border-bottom: 35px solid transparent;
-  border-left: 20px solid #ff9fb0;
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-left: 20px solid #ff9fb0;
 }
 
 /* Flower (decorative) */
@@ -337,11 +356,152 @@
     right: -5px;
     top: 0px;
     font-size: 97px;
-    transform: rotate(-15deg);
+    transform: rotate(-14deg);
     opacity: 0.9;
 }
+
 .flower img {
-    width: 100%;
+    width: 103%;
     transform: rotate(14deg);
 
+}
+
+
+/* ================== Product-Sale =================== */
+.pro-title {
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 9%;
+}
+
+.pro-title h5 {
+    color: #c39738;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 3.0px;
+    margin-bottom: 7px;
+}
+
+.pro-title h1 {
+    font-family: Libre Baskerville;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 53px;
+    margin-bottom: 15px;
+}
+
+.pro-sec {
+    display: flex;
+    gap: 30px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.product-card {
+    width: 260px;
+    text-align: center;
+    position: relative;
+    font-family: Georgia, serif;
+    margin-bottom: 8%;
+    cursor: pointer;
+}
+
+/* image box */
+.img-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+/* overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.overlay a {
+    background: #fff;
+    color: #505050;
+    padding: 18px 30px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.overlay a:hover {
+    background: #c39738;
+    color: #fff;
+}
+
+/* hover effect */
+.product-card:hover .overlay {
+    opacity: 1;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+/* sale badge */
+.sale {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #caa24d;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.product-card h3 {
+    margin-top: 35px;
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #505050;
+    font-weight: 800;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.product-card h3:hover {
+    color: #caa24d;
+}
+
+.category {
+    color: #caa24d;
+    font-style: italic;
+    font-family: Libre Baskerville;
+    margin-bottom: 8px !important;
+}
+
+.price {
+    font-size: 16px;
+    color: #000;
+}
+
+.price .old {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 8px;
+}
+
+.price .new {
+    color: #505050;
+    font-weight: bold;
 }
