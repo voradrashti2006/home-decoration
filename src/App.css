@@ -271,7 +271,7 @@
 }
 
 .desc {
-    font-size: 18px;
+    font-size: 19px;
     color: #888;
     line-height: 1.6;
 }
@@ -371,14 +371,10 @@
 .pro-title {
     text-align: center;
     margin-top: 6%;
-    margin-bottom: 9%;
+    margin-bottom: 7%;
 }
 
 .pro-title h5 {
-    color: #c39738;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 3.0px;
     margin-bottom: 7px;
 }
 
@@ -458,25 +454,29 @@
 /* sale badge */
 .sale {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 9px;
+    left: 9px;
     background: #caa24d;
     color: #fff;
-    font-size: 12px;
-    padding: 6px 12px;
+    font-family: Libre Baskerville;
+    font-size: 17px;
+    padding: 15px 11px;
     border-radius: 50%;
     z-index: 2;
+    font-style: italic;
 }
 
 .product-card h3 {
     margin-top: 35px;
     font-size: 13px;
-    letter-spacing: 3.5px;
+    letter-spacing: 4.5px;
     font-family: "Nunito Sans", sans-serif;
     color: #505050;
     font-weight: 800;
     cursor: pointer;
-    margin-bottom: 8px;
+    margin-bottom: 13px;
+    line-height: 2px;
+
 }
 
 .product-card h3:hover {
@@ -493,6 +493,7 @@
 .price {
     font-size: 16px;
     color: #000;
+    font-style: italic;
 }
 
 .price .old {
@@ -502,6 +503,107 @@
 }
 
 .price .new {
-    color: #505050;
+    color: #676565;
     font-weight: bold;
+}
+
+/* ========================Decoration-Section================= */
+
+.decor-section {
+    padding: 70px 0 20px 0;
+    background: #F9F7F6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LEFT IMAGE AREA */
+.image-box {
+    position: relative;
+    width: 50%;
+    height: 420px;
+}
+
+.image-box img {
+    width: 100%;
+    margin-left: 5%;
+}
+
+.img {
+    position: absolute;
+}
+
+.frame {
+    left: 0;
+    top: 40px;
+    width: 180px;
+}
+
+.lamp {
+    left: 120px;
+    bottom: 0;
+    width: 220px;
+}
+
+.vase {
+    right: 40px;
+    top: 0;
+    width: 220px;
+}
+
+/* RIGHT CONTENT */
+.content-box {
+    width: 45%;
+}
+
+.subtitle {
+    font-size: 15px !important;
+    letter-spacing: 3px !important;
+    color: #c8a24a;
+    font-weight: 700 !important;
+}
+
+.title {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 42px !important;
+    font-weight: 500 !important;
+    color: #2c2c2c;
+    margin: 12px 0;
+    font-style: italic;
+}
+
+.line1 {
+    width: 100px;
+    height: 1px;
+    background: #999;
+    margin: 15px 0 25px 0;
+}
+
+.desc1 {
+    font-size: 15px !important;
+    line-height: 26px !important;
+    color: #999;
+    margin-bottom: 30px !important;
+}
+
+.btn {
+    padding: 14px 55px !important;
+    background: #c8a24a !important;
+    color: #fff !important;
+    font-size: 13px !important;
+    letter-spacing: 2px !important;
+    font-weight: 700 !important;
+    border-radius: 0 !important;
+}
+
+.btn:hover {
+    background-color: transparent !important;
+    border: 1px solid #c8a24a;
+    color: #505050 !important;
 }
