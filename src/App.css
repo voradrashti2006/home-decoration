@@ -500,11 +500,13 @@
     text-decoration: line-through;
     color: #999;
     margin-right: 8px;
+    font-family: Georgia, serif;
 }
 
 .price .new {
     color: #676565;
     font-weight: bold;
+    font-family: Georgia, serif;
 }
 
 /* ========================Decoration-Section================= */
@@ -606,4 +608,62 @@
     background-color: transparent !important;
     border: 1px solid #c8a24a;
     color: #505050 !important;
+}
+
+
+/* ======================= Pink-Section ========================== */
+
+
+.pink-design {
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: repeating-linear-gradient(45deg,
+            #ff9fb2,
+            #ff9fb2 10px,
+            #ffb3c1 10px,
+            #ffb3c1 20px);
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1100px;
+    background: white;
+    padding: 80px 60px;
+    position: relative;
+    text-align: center;
+}
+
+.quote-title {
+    font-size: 42px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+}
+
+.quote-text {
+    max-width: 700px;
+    margin: auto;
+    font-size: 15px;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #999;
+}
+
+.name {
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #505050;
+}
+
+.role {
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #d4a03d;
+    font-family: Georgia, serif;
+    margin-bottom: 18px;
 }

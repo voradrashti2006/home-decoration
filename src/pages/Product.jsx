@@ -223,65 +223,79 @@ function Product() {
       <Box className="pro-sec">
         <Box className="product-card">
           <Box className="img-box">
-            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-1-660x660.jpg" alt="" />
+            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-9-660x660.jpg" alt="" />
             <Box className="overlay">
               <a href="#">ADD TO CART</a>
             </Box>
           </Box>
-          <Typography variant='h3'>DECORATION</Typography>
+          <Typography variant='h3'>WIRE LAMP</Typography>
           <Typography className="category">Home</Typography>
           <Typography className="price">
-            <span className="new">$50.00</span>
+            <span className="new">$12.00</span>
           </Typography>
         </Box>
 
         <Box className="product-card">
           <span className="sale">Sale</span>
           <Box className="img-box">
-            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2016/09/product-img-2-660x660.jpg" alt="" />
+            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-10-660x660.jpg" alt="" />
             <Box className="overlay">
               <a href="#">ADD TO CART</a>
             </Box>
           </Box>
-          <Typography variant='h3'>SILVER LAMP</Typography>
+          <Typography variant='h3'>PINK CORAL</Typography>
           <Typography className="category">Home</Typography>
           <Typography className="price">
-            <span className="old">$100.00</span>
-            <span className="new">$70.00</span>
+            <span className="old">$17.00</span>
+            <span className="new">$13.00</span>
           </Typography>
         </Box>
 
         <Box className="product-card">
           <Box className="img-box">
-            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2016/09/product-img-3-660x660.jpg" alt="" />
+            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-11-660x660.jpg" alt="" />
             <Box className="overlay">
               <a href="#">ADD TO CART</a>
             </Box>
           </Box>
-          <Typography variant='h3'>FLOWERS & CANDLES</Typography>
+          <Typography variant='h3'>PILES PILLOWS</Typography>
           <Typography className="category">Home</Typography>
           <Typography className="price">
 
-            <span className="new">$30.00</span>
+            <span className="new">$14.00</span>
           </Typography>
         </Box>
 
         <Box className="product-card">
 
           <Box className="img-box">
-            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-4-660x660.jpg" alt="" />
+            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-12-660x660.jpg" alt="" />
             <Box className="overlay">
               <a href="#">ADD TO CART</a>
             </Box>
           </Box>
-          <Typography variant='h3'>COFFEE CUP</Typography>
+          <Typography variant='h3'>GOLD PLATE</Typography>
           <Typography className="category">Home</Typography>
           <Typography className="price">
-            <span className="new">$40.00</span>
+            <span className="new">$25.00</span>
           </Typography>
         </Box>
       </Box>
 
+
+      {/* <Box className="pink-design">
+        <div class="wrapper">
+          <div class="quote-title">“Powerful”</div>
+          <div class="quote-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.
+          </div>
+          <div class="name">NICOLA ALEXIS</div>
+          <div class="role">Designer</div>
+        </div>
+      </Box> */}
     </>
   )
 }
