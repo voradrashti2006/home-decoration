@@ -23,7 +23,7 @@ function Hero() {
                     <div className="silder">
                         <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG9tZSUyMGRlY29yfGVufDB8fDB8fHww" alt="" />
                         <div class="card">
-                            <p class="tagline">ALL FOR HOME SWEET HOME</p>
+                            <p class="subtitle">ALL FOR HOME SWEET HOME</p>
                             <h1>Simply Delightful</h1>
                             <div class="line"></div>
                             <p class="desc">
@@ -36,7 +36,7 @@ function Hero() {
                     <div className="silder">
                         <img src="https://cdn.magicdecor.in/com/2024/06/19125028/White-Gold-Banana-Leaves-Foliage-Mural-Wallpaper-M.jpg" alt="" />
                         <div class="card">
-                            <p class="tagline">ALL FOR HOME SWEET HOME</p>
+                            <p class="subtitle">ALL FOR HOME SWEET HOME</p>
                             <h1>Simply Delightful</h1>
                             <div class="line"></div>
                             <p class="desc">
@@ -49,7 +49,7 @@ function Hero() {
                     <div className="silder">
                         <img src="https://thumbs.dreamstime.com/b/delicate-arrangement-pink-white-dried-flowers-soft-fabric-background-creating-serene-calming-atmosphere-385922629.jpg" alt="" />
                         <div class="card">
-                            <p class="tagline">ALL FOR HOME SWEET HOME</p>
+                            <p class="subtitle">ALL FOR HOME SWEET HOME</p>
                             <h1>Simply Delightful</h1>
                             <div class="line"></div>
                             <p class="desc">
