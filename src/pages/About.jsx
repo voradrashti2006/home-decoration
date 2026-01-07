@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
@@ -20,17 +19,15 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-const Header = () => {
+function About() {
     const [drawerOpen, setDrawerOpen] = useState(false);
     const isMobile = useMediaQuery("(max-width:768px)");
-
-    // const menuItems = ["Home", "Pages", "Portfolio", "Blog", "Shop", "Contact"];
 
     return (
         <>
             <AppBar position="static" color="default">
                 <Toolbar sx={{ justifyContent: "space-between" }}>
-                    {/* Logo */}
+
                     <Box className="logo">
                         <Box className="logo-icon">
                             <HomeIcon></HomeIcon>
@@ -40,8 +37,6 @@ const Header = () => {
                         </Box>
                     </Box>
 
-
-                    {/* Menu */}
                     {!isMobile && (
                         <ul className="menu">
                             <li><a href="#">Home</a></li>
@@ -62,7 +57,6 @@ const Header = () => {
                     <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
                         {!isMobile && (
                             <>
-
                                 Search<SearchIcon></SearchIcon>
                                 <ShoppingCartIcon></ShoppingCartIcon>
                             </>
@@ -72,8 +66,7 @@ const Header = () => {
                             edge="end"
                             color="inherit"
                             aria-label="menu"
-                            onClick={() => setDrawerOpen(true)}
-                        >
+                            onClick={() => setDrawerOpen(true)}>
                             <MenuIcon></MenuIcon>
                         </IconButton>
                     </Box>
@@ -120,8 +113,22 @@ const Header = () => {
                 </Box>
             </Drawer>
 
+
+            <div class="image">
+                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/About-Us-Title-Image.jpg" alt="" />
+
+                <div class="overlay-text">
+                    <p class="subtitle">THE TEAM</p>
+                    <h1>About us</h1>
+                    <div class="line"></div>
+                    <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy<br/>
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</h4>
+                </div>
+            </div>   
+
+
         </>
     );
 }
 
-export default Header;
+export default About;

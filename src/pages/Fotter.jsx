@@ -18,6 +18,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import XIcon from '@mui/icons-material/X';
+import HomeIcon from '@mui/icons-material/Home';
 
 const settings = {
     dots: true,
@@ -121,7 +122,14 @@ function Fotter() {
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={1}>
                             <Grid size={4}>
-                                <Typography className="footer-logo">All4HOME</Typography>
+                                <Box className="footer-logo">
+                                    <Box className="footer-icon">
+                                        <HomeIcon></HomeIcon>
+                                    </Box>
+                                    <Box className="flogo-text">
+                                        HOME<span>Aura</span>
+                                    </Box>
+                                </Box>
 
                                 <Typography className="footer-text">
                                     Pro inimicus sapientem an, ad cibo <br />velit mollis mei,
