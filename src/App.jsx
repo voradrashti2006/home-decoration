@@ -8,11 +8,11 @@ import About from './pages/About'
 function App() {
   return (
     <>
-      {/* <Header></Header> */}
-      {/* <Hero></Hero> */}
-      {/* <Product></Product> */}
-      {/* <Fotter></Fotter> */}
-      <About></About>
+      <Header></Header>
+      <Hero></Hero>
+      <Product></Product>
+      <Fotter></Fotter>
+      {/* <About></About> */}
     </>
   );
 }
