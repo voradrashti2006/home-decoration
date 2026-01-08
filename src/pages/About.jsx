@@ -18,6 +18,20 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Typography from '@mui/material/Typography';
+import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import HeadsetMicOutlinedIcon from '@mui/icons-material/HeadsetMicOutlined';
+import SupportIcon from '@mui/icons-material/Support';
+import PublicOutlinedIcon from '@mui/icons-material/PublicOutlined';
+import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
+import Container from '@mui/material/Container';
+
+
+
+
+
+
 
 function About() {
     const [drawerOpen, setDrawerOpen] = useState(false);
@@ -121,14 +135,133 @@ function About() {
                     <p class="subtitle">THE TEAM</p>
                     <h1>About us</h1>
                     <div class="line"></div>
-                    <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy<br/>
+                    <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy<br />
                         eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</h4>
                 </div>
-            </div>   
+            </div>
+
+
+            <Box className="main-box">
+                <Box className="info-box">
+                    <Box className="icon">
+                        <LightbulbOutlinedIcon></LightbulbOutlinedIcon>
+                    </Box>
+                    <Box className="content">
+                        <Typography variant="h3">ELATED SETTINGS</Typography>
+                        <p> Sed ut perspiciatis unde omnis<br />
+                            iste natus errorsit voluptatem<br />
+                            accusantium natus error sit<br />
+                            voluptatem accusan tium.</p>
+                    </Box>
+                </Box>
+                <Box className="info-box">
+                    <Box className="icon">
+                        <SettingsOutlinedIcon></SettingsOutlinedIcon>
+                    </Box>
+                    <Box className="content">
+                        <Typography variant="h3">RETINA READY</Typography>
+                        <p> Sed ut perspiciatis unde omnis<br />
+                            iste natus errorsit voluptatem<br />
+                            accusantium natus error sit<br />
+                            voluptatem accusan tium.</p>
+                    </Box>
+                </Box>
+                <Box className="info-box">
+                    <Box className="icon">
+                        <HeadsetMicOutlinedIcon></HeadsetMicOutlinedIcon>
+                    </Box>
+                    <Box className="content">
+                        <Typography variant="h3">FAST SUPPORT</Typography>
+                        <p> Sed ut perspiciatis unde omnis<br />
+                            iste natus errorsit voluptatem<br />
+                            accusantium natus error sit<br />
+                            voluptatem accusan tium.</p>
+                    </Box>
+                </Box>
+            </Box>
+
+
+
+
+            <Box className="main-box">
+                <Box className="info-box">
+                    <Box className="icon">
+                        <SupportIcon></SupportIcon>
+                    </Box>
+                    <Box className="content">
+                        <Typography variant="h3">SMOOTH PARALLAX</Typography>
+                        <p> Sed ut perspiciatis unde omnis<br />
+                            iste natus errorsit voluptatem<br />
+                            accusantium natus error sit<br />
+                            voluptatem accusan tium.</p>
+                    </Box>
+                </Box>
+                <Box className="info-box">
+                    <Box className="icon">
+                        <PublicOutlinedIcon></PublicOutlinedIcon>
+                    </Box>
+                    <Box className="content">
+                        <Typography variant="h3">AMAZING LAYOUTS</Typography>
+                        <p> Sed ut perspiciatis unde omnis<br />
+                            iste natus errorsit voluptatem<br />
+                            accusantium natus error sit<br />
+                            voluptatem accusan tium.</p>
+                    </Box>
+                </Box>
+                <Box className="info-box">
+                    <Box className="icon">
+                        <ExploreOutlinedIcon></ExploreOutlinedIcon>
+                    </Box>
+                    <Box className="content">
+                        <Typography variant="h3">100% RESPONSIVE</Typography>
+                        <p> Sed ut perspiciatis unde omnis<br />
+                            iste natus errorsit voluptatem<br />
+                            accusantium natus error sit<br />
+                            voluptatem accusan tium.</p>
+                    </Box>
+                </Box>
+            </Box>
+
+
+            <Box className="intro-section">
+                <Box
+                    component="img"
+                    src="https://images-cdn.ubuy.co.in/65314b951054fd7230351ff6-fine-decor-dacre-white-floral-unpasted.jpg"
+                    alt="Background"
+                    className="intro-bg"
+                />
+
+                <Container maxWidth="lg" className="intro-content">
+                    <Box className="intro-flex">
+                        {/* LEFT */}
+                        <Box className="intro-left">
+                            <Typography className="intro-title">
+                                Introduce your <br /> Company
+                            </Typography>
+                            <div class="intro-line"></div>
+                        </Box>
+
+                        {/* RIGHT */}
+                        <Box className="intro-right">
+                            <Typography className="intro-text">
+
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore<br />
+                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd <br />
+                                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing<br />
+                                elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos<br />
+                                et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.
+                            </Typography>
+                        </Box>
+                    </Box>
+                </Container>
+            </Box>
+
+
+
+
 
 
         </>
     );
 }
-
 export default About;
