@@ -20,6 +20,7 @@ import Paper from '@mui/material/Paper';
 import XIcon from '@mui/icons-material/X';
 import HomeIcon from '@mui/icons-material/Home';
 
+
 const settings = {
     dots: true,
     infinite: true,

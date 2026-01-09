@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -26,11 +26,53 @@ import SupportIcon from '@mui/icons-material/Support';
 import PublicOutlinedIcon from '@mui/icons-material/PublicOutlined';
 import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
 import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from "@mui/icons-material/Phone";
+import TextField from '@mui/material/TextField';
+import SendIcon from '@mui/icons-material/Send';
+import XIcon from '@mui/icons-material/X';
+import KeyboardAltOutlinedIcon from "@mui/icons-material/KeyboardAltOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Avatar from '@mui/material/Avatar';
 
 
 
+const CounterItem = ({ icon, end }) => {
+    const [count, setCount] = useState(0);
+    const started = useRef(false);
 
+    if (!started.current) {
+        started.current = true;
 
+        let current = 0;
+        const step = Math.ceil(end / 60);
+
+        const animate = () => {
+            current += step;
+            if (current >= end) {
+                setCount(end);
+                return;
+            }
+            setCount(current);
+            setTimeout(animate, 30);
+        };
+
+        setTimeout(animate, 30);
+    }
+
+    return (
+        <Box className="counter-item">
+            {icon}
+            <h2>{count}</h2>
+        </Box>
+    );
+};
 
 
 function About() {
@@ -255,10 +297,248 @@ function About() {
                     </Box>
                 </Container>
             </Box>
+            <Box className="pro-title">
+                <Typography variant="h5" className='subtitle'>ALL FOR HOME</Typography>
+                <Typography variant="h1">Our amazing team</Typography>
+                <div class="line"></div>
+                <p class="desc">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos<br />
+                    himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet<br />
+                    a augue. Sed non neque elit.</p>
+            </Box>
+
+            <Box className="pink-number">
+                <Container maxWidth="lg">
+                    <Box className="counter-grid">
+                        <CounterItem
+                            icon={<KeyboardAltOutlinedIcon className="counter-icon" />}
+                            end={9859} />
+                        <CounterItem
+                            icon={<FavoriteBorderOutlinedIcon className="counter-icon" />}
+                            end={4697} />
+                        <CounterItem
+                            icon={<HeadsetMicOutlinedIcon className="counter-icon" />}
+                            end={6874} />
+                        <CounterItem
+                            icon={<StarBorderOutlinedIcon className="counter-icon" />}
+                            end={3175} />
+                    </Box>
+                </Container>
+            </Box>
+
+
+            <Box className="pro-title">
+                <Typography variant="h5" className='subtitle'>ALL FOR HOME</Typography>
+                <Typography variant="h1">Sharp minded solutions</Typography>
+                <div class="line"></div>
+                <p class="desc">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos<br />
+                    himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus. Sed non neque elit.</p>
+            </Box>
 
 
 
+            <Box className="profile-all">
+                <Card className="profile-card">
+                    {/* IMAGE */}
+                    <Box className="profile-image">
+                        <img
+                            src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/Team-1.jpg"
+                            alt="Michael Miller"
+                        />
+                    </Box>
 
+                    {/* TEXT */}
+                    <Box className="profile-content">
+                        <Typography className="profile-name">
+                            MICHAEL MILLER
+                        </Typography>
+
+                        <Typography className="profile-role">
+                            Designer
+                        </Typography>
+
+                        <Typography className="profile-desc">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed diam
+                            nonummy nib
+                        </Typography>
+
+                        <Box className="profile-social">
+                            <FacebookOutlinedIcon />
+                            <InstagramIcon />
+                            <TwitterIcon />
+                        </Box>
+                    </Box>
+                </Card>
+                <Card className="profile-card">
+                    {/* IMAGE */}
+                    <Box className="profile-image">
+                        <img
+                            src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/Team-2.jpg"
+                            alt="Michael Miller"
+                        />
+                    </Box>
+
+                    {/* TEXT */}
+                    <Box className="profile-content">
+                        <Typography className="profile-name">
+                            MICHAEL MILLER
+                        </Typography>
+
+                        <Typography className="profile-role">
+                            Designer
+                        </Typography>
+
+                        <Typography className="profile-desc">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed diam
+                            nonummy nib
+                        </Typography>
+
+                        <Box className="profile-social">
+                            <FacebookOutlinedIcon />
+                            <InstagramIcon />
+                            <TwitterIcon />
+                        </Box>
+                    </Box>
+                </Card>
+                <Card className="profile-card">
+                    {/* IMAGE */}
+                    <Box className="profile-image">
+                        <img
+                            src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/Team-3.jpg"
+                            alt="Michael Miller"
+                        />
+                    </Box>
+
+                    {/* TEXT */}
+                    <Box className="profile-content">
+                        <Typography className="profile-name">
+                            MICHAEL MILLER
+                        </Typography>
+
+                        <Typography className="profile-role">
+                            Designer
+                        </Typography>
+
+                        <Typography className="profile-desc">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed diam
+                            nonummy nib
+                        </Typography>
+
+                        <Box className="profile-social">
+                            <FacebookOutlinedIcon />
+                            <InstagramIcon />
+                            <TwitterIcon />
+                        </Box>
+                    </Box>
+                </Card>
+                <Card className="profile-card">
+                    {/* IMAGE */}
+                    <Box className="profile-image">
+                        <img
+                            src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/Team-4.jpg"
+                            alt="Michael Miller"
+                        />
+                    </Box>
+
+                    {/* TEXT */}
+                    <Box className="profile-content">
+                        <Typography className="profile-name">
+                            MICHAEL MILLER
+                        </Typography>
+
+                        <Typography className="profile-role">
+                            Designer
+                        </Typography>
+
+                        <Typography className="profile-desc">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed diam
+                            nonummy nib
+                        </Typography>
+
+                        <Box className="profile-social">
+                            <FacebookOutlinedIcon />
+                            <InstagramIcon />
+                            <TwitterIcon />
+                        </Box>
+                    </Box>
+                </Card>
+
+            </Box>
+
+
+
+            <Box className="footer">
+                <Box className="footer-top">
+                    <Box sx={{ flexGrow: 1 }}>
+                        <Grid container spacing={1}>
+                            <Grid size={4}>
+                                <Box className="footer-logo">
+                                    <Box className="footer-icon">
+                                        <HomeIcon></HomeIcon>
+                                    </Box>
+                                    <Box className="flogo-text">
+                                        HOME<span>Aura</span>
+                                    </Box>
+                                </Box>
+
+                                <Typography className="footer-text">
+                                    Pro inimicus sapientem an, ad cibo <br />velit mollis mei,
+                                    ne vim adhuc<br /> gubergren. Vis no intellegat<br /> voluptatibus,
+                                    vim an partem<br /> admodum copiosae,
+                                </Typography>
+
+                                <div className="contact">
+                                    <p><LocationOnIcon />620 Eighth Avenue, New York,<br /> New York, 10018.</p>
+                                    <p><EmailIcon />all4home@example.com</p>
+                                    <p><PhoneIcon />+(1) 212-556-3622</p>
+                                </div>
+                            </Grid>
+                            <Grid size={4}>
+                                <Box className="Twitter">
+                                    <Typography className="footer-title">Twitter feed</Typography>
+                                    <Typography className="twitter-text">
+                                        Couldn't connect with Twitter
+                                    </Typography>
+                                </Box>
+                            </Grid>
+                            <Grid size={4}>
+                                <Typography className="footer-title">Newsletter</Typography>
+
+                                <Typography className="footer-text">
+                                    Set up your footer quickly using the<br /> footer widget areas.
+                                    With the option<br /> of 1-4 footer columns, you can be<br /> sure that
+                                    all relevant information will<br /> look gorgeous in your footer.
+                                </Typography>
+
+                                <div className="newsletter">
+                                    <TextField
+                                        placeholder="Your E-Mail"
+                                        variant="outlined"
+                                        size="small"
+                                        className="newsletter-input"
+                                    />
+                                    <IconButton className="newsletter-btn">
+                                        <SendIcon />
+                                    </IconButton>
+                                </div>
+                                <div className="social">
+                                    <span>Follow us:</span>
+                                    <InstagramIcon />
+                                    <TwitterIcon />
+                                    <FacebookIcon />
+                                    <XIcon />
+                                </div>
+                            </Grid>
+                        </Grid>
+                    </Box>
+                </Box>
+                <div className="footer-bottom">
+                    © 2017 Qode Interactive, All Rights Reserved
+                </div>
+            </Box>
 
 
         </>

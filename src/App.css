@@ -1056,7 +1056,7 @@ p {
 
 .intro-flex {
     display: flex;
-    gap: 90px;
+    gap: 40px;
 }
 
 /* LEFT */
@@ -1065,16 +1065,19 @@ p {
 }
 
 .intro-title {
-    font-family: "Playfair Display", serif;
-    font-size: 42px;
-    font-style: italic;
-    color: #333;
+    font-family: Libre Baskerville !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
+    font-size: 37px !important;
+    line-height: 1.5em !important;
+    color: #505050 !important;
+
 }
 
 .intro-line {
     width: 120px;
-    height: 2px;
-    background: #aaa;
+    height: 1px;
+    background: #505050;
     margin: 10px auto 0px 0px;
 }
 
@@ -1084,9 +1087,11 @@ p {
 }
 
 .intro-text {
-    font-size: 14px;
-    color: #777;
-    line-height: 1.9;
+    font-family: "Nunito Sans", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 27px !important;
+    color: #5f5b5b !important;
 }
 
 /* RESPONSIVE */
@@ -1099,4 +1104,121 @@ p {
     .intro-flex {
         flex-direction: column;
     }
+}
+
+
+/* =========================== Pink-Number ============================== */
+
+.pink-number {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: repeating-linear-gradient(45deg,
+            #ff9fb2,
+            #ff9fb2 10px,
+            #ffb3c1 10px,
+            #ffb3c1 20px);
+}
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.counter-item h2 {
+    margin-top: 15px;
+    font-size: 42px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Georgia", serif;
+}
+
+.counter-icon {
+    font-size: 46px !important;
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .counter-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .counter-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* ========================= Profile-Card ============================= */
+
+.profile-all {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-card {
+    width: 300px;
+    overflow: hidden;
+    border: none;
+}
+
+/* IMAGE */
+.profile-image img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+/* CONTENT (NO BOX LOOK) */
+.profile-content {
+    padding: 22px 22px 22px 0px;
+}
+
+/* NAME */
+.profile-name {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #2b2b2b;
+}
+
+/* ROLE */
+.profile-role {
+    margin-top: 6px;
+    font-size: 15px;
+    font-style: italic;
+    color: #e6a04b;
+}
+
+/* DESCRIPTION */
+.profile-desc {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #9a9a9a;
+}
+
+/* SOCIAL ICONS */
+.profile-social {
+    margin-top: 18px;
+    display: flex;
+    gap: 16px;
+}
+
+.profile-social svg {
+    font-size: 16px;
+    color: #7a7a7a;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.profile-social svg:hover {
+    color: #e6a04b;
 }
