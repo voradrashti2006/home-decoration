@@ -5,8 +5,8 @@ import Hero from './pages/Hero'
 import Product from './pages/Product';
 import Fotter from './pages/Fotter';
 import About from './pages/About';
-import Portfolio from './pages/Portfolio';
-
+import Gallery2 from './pages/Gallery2';
+import Gallery3 from './pages/Gallery3';
 function App() {
   return (
     <>
@@ -15,7 +15,8 @@ function App() {
       {/* <Product></Product> */}
       {/* <Fotter></Fotter> */}
       {/* <About></About> */}
-     <Portfolio></Portfolio>
+      {/* <Gallery2></Gallery2> */}
+      <Gallery3></Gallery3>
 
     </>
   );

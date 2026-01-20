@@ -1305,7 +1305,7 @@ p {
     color: #e6a04b;
 }
 
-/* ============================= Portfolio-section ============================ */
+/* ============================= gallery-section ============================ */
 
 .hero-sec {
     background-color: #fffcfc;
@@ -1329,6 +1329,9 @@ p {
 
 .allimage .imgsec {
     display: flex;
+    gap: 32px;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .imgrow {
@@ -1387,10 +1390,57 @@ p {
     font-style: italic !important;
     color: #50504D;
     font-family: "Libre Baskerville", serif !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 23px !important;
     margin-left: 10px !important;
 }
 
 .Gallery-role:hover {
     color: #c8a24a;
 }
+
+.button-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buton {
+    padding: 14px 55px !important;
+    background: #c8a24a !important;
+    color: #fff !important;
+    font-size: 13px !important;
+    letter-spacing: 2px !important;
+    font-weight: 700 !important;
+    border-radius: 0 !important;
+    margin-bottom: 8% !important;
+    margin-top: 4% !important;
+}
+
+.buton:hover {
+    background-color: transparent !important;
+    border: 1px solid #c8a24a;
+    color: #505050 !important;
+}
+
+/* ====================================== Gallery3 ================================== */
+
+.allimage .imgsec {
+    display: flex;
+    gap: 32px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.imgrow {
+    width: 100%;
+}
+
+.imgrow img {
+    width: 100%;
+}
+
+
+
+
+
+

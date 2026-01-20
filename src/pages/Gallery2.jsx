@@ -19,8 +19,9 @@ import IconButton from "@mui/material/IconButton";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import Button from '@mui/material/Button';
 
-const Portfolio = () => {
+const Gallery2 = () => {
   return (
     <>
       <AppBar position="static" color="default" className="appbar">
@@ -212,7 +213,37 @@ const Portfolio = () => {
                 <Box className="img-overlay"></Box>
               </Box>
               <Typography variant="h5" className="Gallery-title">
-                INTERIOR DECORATING
+                INFORMATION
+              </Typography>
+            </Box>
+            <Typography className="Gallery-role">
+              Business/Home
+            </Typography>
+          </Box>
+        </Box>
+        <Box className="imgsec">
+          <Box className="imgrow">
+            <Box className="hover-box">
+              <Box className="img-wrapper">
+                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-11.jpg" alt="" />
+                <Box className="img-overlay"></Box>
+              </Box>
+              <Typography variant="h5" className="Gallery-title">
+                IDEAS
+              </Typography>
+            </Box>
+            <Typography className="Gallery-role">
+              Home/Vision
+            </Typography>
+          </Box>
+          <Box className="imgrow">
+            <Box className="hover-box">
+              <Box className="img-wrapper">
+                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-10.jpg" alt="" />
+                <Box className="img-overlay"></Box>
+              </Box>
+              <Typography variant="h5" className="Gallery-title">
+                THINK POSITIVE
               </Typography>
             </Box>
             <Typography className="Gallery-role">
@@ -222,33 +253,41 @@ const Portfolio = () => {
         </Box>
         <Box className="imgsec">
           <Box className="imgrow">
-            <img
-              src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-11.jpg"
-              alt=""
-            />
+            <Box className="hover-box">
+              <Box className="img-wrapper">
+                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-9.jpg" alt="" />
+                <Box className="img-overlay"></Box>
+              </Box>
+              <Typography variant="h5" className="Gallery-title">
+                INSPIRATION
+              </Typography>
+            </Box>
+            <Typography className="Gallery-role">
+              Business/Home
+            </Typography>
           </Box>
           <Box className="imgrow">
-            <img
-              src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-10.jpg"
-              alt=""
-            />
-          </Box>
-        </Box>
-        <Box className="imgsec">
-          <Box className="imgrow">
-            <img
-              src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-9.jpg"
-              alt=""
-            />
-          </Box>
-          <Box className="imgrow">
-            <img
-              src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-8.jpg"
-              alt=""
-            />
+            <Box className="hover-box">
+              <Box className="img-wrapper">
+                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-8.jpg" alt="" />
+                <Box className="img-overlay"></Box>
+              </Box>
+              <Typography variant="h5" className="Gallery-title">
+                FLOWERS
+              </Typography>
+            </Box>
+            <Typography className="Gallery-role">
+              Business/Home
+            </Typography>
           </Box>
         </Box>
       </Box>
+      <div className="button-center">
+        <Button className="buton">
+          LOAD MORE
+        </Button>
+      </div>
+
 
       <Box className="footer">
         <Box className="footer-top">
@@ -337,4 +376,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Gallery2;
