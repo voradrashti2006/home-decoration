@@ -1,27 +1,27 @@
-import React from "react";
-import Box from "@mui/material/Box";
+import React from 'react'
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
+import Box from "@mui/material/Box";
 import HomeIcon from "@mui/icons-material/Home";
-import SearchIcon from "@mui/icons-material/Search";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import Grid from "@mui/material/Grid";
+import SearchIcon from "@mui/icons-material/Search";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import TextField from "@mui/material/TextField";
-import SendIcon from "@mui/icons-material/Send";
-import XIcon from "@mui/icons-material/X";
 import IconButton from "@mui/material/IconButton";
+import SendIcon from "@mui/icons-material/Send";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import Button from '@mui/material/Button';
+import XIcon from "@mui/icons-material/X";
+import CardContent from '@mui/material/CardContent';
 
-const Gallery3 = () => {
+function Blog() {
     return (
         <>
             <AppBar position="static" color="default" className="appbar">
@@ -156,157 +156,50 @@ const Gallery3 = () => {
             </AppBar>
 
             <Box className="hero-sec">
-                <Typography variant="h1">Gallery Three  Columns Wide</Typography>
+                <Typography variant="h1">Blog Masonry</Typography>
             </Box>
 
-            <Box className="sec-image">
-                <Box className="imgsec">
-                    <Box className="threebox">
-                        <Box className="hoverimg">
-                            <Box className="img-wrapper">
-                                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-15.jpg" alt="" />
-                                <Box className="imagesec">
-                                    <h4 className="hover-title">THE WORK OF ART</h4>
-                                    <p className="hover-subtitle">Business / Home</p>
-                                </Box>
-                            </Box>
-                        </Box>
-                    </Box>
 
-                    <Box className="threebox">
-                        <Box className="hoverimg">
-                            <Box className="img-wrapper">
-                                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2016/09/port-1-single-7.jpg" alt="" />
-                                <Box className="imagesec">
-                                    <h4 className="hover-title">DINING ROOM</h4>
-                                    <p className="hover-subtitle">Home / Vision</p>
-                                </Box>
-                            </Box>
-                        </Box>
+
+            <Box className="all-blog">
+                <Box className="blog-card">
+                    {/* IMAGE */}
+                    <Box className="cardimg">
+                        <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2016/09/blog-post-7-m.jpg" alt="" />
                     </Box>
-                    <Box className="threebox">
-                        <Box className="hoverimg">
-                            <Box className="img-wrapper">
-                                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-13.jpg" alt="" />
-                                <Box className="imagesec">
-                                    <h4 className="hover-title">INTERIOR DECORATING</h4>
-                                    <p className="hover-subtitle">Home / Innovation</p>
-                                </Box>
-                            </Box>
-                        </Box>
-                    </Box>
+                    {/* CONTENT */}
+                    <CardContent className="card-content">
+                        <Typography className="card-meta">
+                            February 20, 2017 / Architecture
+                        </Typography>
+
+                        <Typography className="card-title">
+                            GOLDEN DESIGN RULES
+                        </Typography>
+ <div class="divider"></div>
+                        <Typography className="card-desc">
+                            Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.
+                            Aenean commodo ligula eget dolor. Aenean cum massa.
+                            Cum sociis Theme natoque penatibus et magnis dis...
+                        </Typography>
+
+                        <Typography className="card-author">
+                            By Marc Veyne
+                        </Typography>
+                    </CardContent>
                 </Box>
-                <Box className="imgsec">
-                    <Box className="threebox">
-                        <Box className="hoverimg">
-                            <Box className="img-wrapper">
-                                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-12.jpg" alt="" />
-                                <Box className="imagesec">
-                                    <h4 className="hover-title">INFORMATION</h4>
-                                    <p className="hover-subtitle">Business / Home</p>
-                                </Box>
-                            </Box>
-                        </Box>
-                    </Box>
-                    <Box className="threebox">
-                        <Box className="hoverimg">
-                            <Box className="img-wrapper">
-                                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-11.jpg" alt="" />
-                                <Box className="imagesec">
-                                    <h4 className="hover-title">IDEAS</h4>
-                                    <p className="hover-subtitle">Home / Vision</p>
-                                </Box>
-                            </Box>
-                        </Box>
-                    </Box>
-                    <Box className="threebox">
-                        <Box className="hoverimg">
-                            <Box className="img-wrapper">
-                                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-10.jpg" alt="" />
-                                <Box className="imagesec">
-                                    <h4 className="hover-title">THINK POSITIVE</h4>
-                                    <p className="hover-subtitle">Home / Innovation</p>
-                                </Box>
-                            </Box>
-                        </Box>
-                    </Box>
-                </Box>
-                <Box className="imgsec">
-                    <Box className="threebox">
-                        <Box className="hoverimg">
-                            <Box className="img-wrapper">
-                                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-9.jpg" alt="" />
-                                <Box className="imagesec">
-                                    <h4 className="hover-title">INSPIRATION</h4>
-                                    <p className="hover-subtitle">Business / Home</p>
-                                </Box>
-                            </Box>
-                        </Box>
-                    </Box>
-                    <Box className="threebox">
-                        <Box className="hoverimg">
-                            <Box className="img-wrapper">
-                                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-8.jpg" alt="" />
-                                <Box className="imagesec">
-                                    <h4 className="hover-title">FLOWERS</h4>
-                                    <p className="hover-subtitle">Business / Home</p>
-                                </Box>
-                            </Box>
-                        </Box>
-                    </Box>
-                    <Box className="threebox">
-                        <Box className="hoverimg">
-                            <Box className="img-wrapper">
-                                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-7.jpg" alt="" />
-                                <Box className="imagesec">
-                                    <h4 className="hover-title">PLANTS</h4>
-                                    <p className="hover-subtitle">Home / Innovation</p>
-                                </Box>
-                            </Box>
-                        </Box>
-                    </Box>
-                </Box>
-                <Box className="imgsec">
-                    <Box className="threebox">
-                        <Box className="hoverimg">
-                            <Box className="img-wrapper">
-                                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-6.jpg" alt="" />
-                                <Box className="imagesec">
-                                    <h4 className="hover-title">BREAKFAST</h4>
-                                    <p className="hover-subtitle">Home / Vision</p>
-                                </Box>
-                            </Box>
-                        </Box>
-                    </Box>
-                    <Box className="threebox">
-                        <Box className="hoverimg">
-                            <Box className="img-wrapper">
-                                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-5.jpg" alt="" />
-                                <Box className="imagesec">
-                                    <h4 className="hover-title">GIFT CARDS</h4>
-                                    <p className="hover-subtitle">Business / Home</p>
-                                </Box>
-                            </Box>
-                        </Box>
-                    </Box>
-                    <Box className="threebox">
-                        <Box className="hoverimg">
-                            <Box className="img-wrapper">
-                                <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/h-1-port-f-img-4.jpg" alt="" />
-                                <Box className="imagesec">
-                                    <h4 className="hover-title">HOME DESIGN</h4>
-                                    <p className="hover-subtitle">Home / Innovation</p>
-                                </Box>
-                            </Box>
-                        </Box>
-                    </Box>
-                </Box>
+                <Box className="blog-card"></Box>
+                <Box className="blog-card"></Box>
             </Box>
-            <div className="button-center">
-                <Button className="buton">
-                    LOAD MORE
-                </Button>
-            </div>
+
+
+
+
+
+
+
+
+
 
 
             <Box className="footer">
@@ -393,7 +286,7 @@ const Gallery3 = () => {
                 </div>
             </Box>
         </>
-    );
-};
+    )
+}
 
-export default Gallery3;
+export default Blog;

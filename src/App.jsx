@@ -7,6 +7,8 @@ import Fotter from './pages/Fotter';
 import About from './pages/About';
 import Gallery2 from './pages/Gallery2';
 import Gallery3 from './pages/Gallery3';
+import Blog from './pages/Blog';
+
 function App() {
   return (
     <>
@@ -16,7 +18,8 @@ function App() {
       {/* <Fotter></Fotter> */}
       {/* <About></About> */}
       {/* <Gallery2></Gallery2> */}
-      <Gallery3></Gallery3>
+      {/* <Gallery3></Gallery3> */}
+      <Blog></Blog>
 
     </>
   );

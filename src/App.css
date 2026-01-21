@@ -1413,7 +1413,7 @@ p {
     font-weight: 700 !important;
     border-radius: 0 !important;
     margin-bottom: 8% !important;
-    margin-top: 4% !important;
+    margin-top: 5% !important;
 }
 
 .buton:hover {
@@ -1424,23 +1424,171 @@ p {
 
 /* ====================================== Gallery3 ================================== */
 
-.allimage .imgsec {
+.sec-image .imgsec {
     display: flex;
-    gap: 32px;
     margin-left: 7%;
     margin-right: 7%;
 }
 
-.imgrow {
+.threebox {
+    width: 100%;
+    margin-top: 32px;
+    margin-right: 32px;
+}
+
+.threebox img {
     width: 100%;
 }
 
-.imgrow img {
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.imagesec {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    text-align: center;
+}
+
+.hoverimg:hover img {
+    transform: scale(1.05);
+}
+
+.hoverimg:hover .imagesec {
+    opacity: 1;
+}
+
+.hover-title {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.hover-subtitle {
+    color: #ffffff;
+    font-size: 16px;
+    font-style: italic;
+    font-family: "Libre Baskerville", serif;
+}
+
+.hover-subtitle:hover {
+    color: #c8a24a;
+}
+
+.sec-image .imgsec {
+    display: flex;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.threebox {
+    width: 100%;
+    margin-top: 32px;
+    margin-right: 32px;
+}
+
+.threebox img {
     width: 100%;
 }
 
 
+/* ==========================Blog-Page========================= */
+
+.all-blog {
+    display: flex;
+    gap: 43px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 8%;
+}
 
 
 
+.blog-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #eee;
+    background: #fff;
+}
 
+/* IMAGE */
+.cardimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* CONTENT */
+.card-content {
+    padding: 22px;
+}
+
+
+.card-meta {
+    color: #c9a24d;
+    font-size: 16px;
+    font-style: italic;
+    font-family: "Libre Baskerville", serif;
+}
+
+.card-meta:hover {
+    color: #505050;
+}
+
+.card-title {
+    margin-top: 15px !important;
+    font-size: 14px !important;
+    letter-spacing: 3.5px !important;
+    font-family: "Nunito Sans", sans-serif !important;
+    color: #505050 !important;
+    font-weight: 800 !important;
+    cursor: pointer !important;
+    margin-bottom: 30px !important;
+    line-height: 2px !important;
+}
+
+.card-title:hover {
+    color: #caa24d !important;
+}
+
+.divider {
+    width: 75px;
+    height: 1px;
+    background: #aaa;
+    margin: 0 auto 0 0;
+    margin-bottom: 16px;
+}
+
+
+.card-desc {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.card-author {
+    font-size: 14px;
+    color: #c9a24d;
+    font-style: italic;
+}
