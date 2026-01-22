@@ -21,6 +21,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
 import CardContent from '@mui/material/CardContent';
 
+
 function Blog() {
     return (
         <>
@@ -162,35 +163,159 @@ function Blog() {
 
 
             <Box className="all-blog">
-                <Box className="blog-card">
-                    {/* IMAGE */}
-                    <Box className="cardimg">
-                        <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2016/09/blog-post-7-m.jpg" alt="" />
+                <Box className="box-column">
+                    <Box className="blog-card">
+                        <Box className="cardimg">
+                            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2016/09/blog-post-7-m.jpg" alt="" />
+                        </Box>
+                        <CardContent className="card-content">
+                            <Typography className="card-meta">
+                                February 20, 2017 / Architecture
+                            </Typography>
+                            <Typography className="card-title">
+                                GOLDEN DESIGN RULES
+                            </Typography>
+                            <div class="divider"></div>
+                            <Typography className="card-desc">
+                                Lorem ipsum dolor sit amet, consec<br />
+                                tetuer adipiscing elit. Aenean comm odo<br />
+                                ligula eget dolor. Aenean cum massa.<br />
+                                Cum sociis Theme natoque penatibus et<br />
+                                magnis dis...
+                            </Typography>
+                            <Typography className="card-meta">
+                                By Marc Veyne
+                            </Typography>
+                        </CardContent>
                     </Box>
-                    {/* CONTENT */}
-                    <CardContent className="card-content">
-                        <Typography className="card-meta">
-                            February 20, 2017 / Architecture
-                        </Typography>
 
-                        <Typography className="card-title">
-                            GOLDEN DESIGN RULES
+                    <Box className="grey-box">
+                        <Typography variant='h5'>
+                            ORGANIZING SPACE
                         </Typography>
- <div class="divider"></div>
-                        <Typography className="card-desc">
-                            Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.
-                            Aenean commodo ligula eget dolor. Aenean cum massa.
-                            Cum sociis Theme natoque penatibus et magnis dis...
-                        </Typography>
+                        <a href="">https://qodeinteractive.com/wordpress-<br />
+                            theme/all4home-home-decoration-theme/</a>
+                    </Box>
 
-                        <Typography className="card-author">
-                            By Marc Veyne
+                    <Box className="blog-card">
+                        <Box className="cardimg">
+                            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2016/09/Blog-Gallery-2-m-917x1024.jpg" alt="" />
+                        </Box>
+                        <CardContent className="card-content">
+                            <Typography className="card-meta">
+                                September 21, 2016 / Architecture
+                            </Typography>
+                            <Typography className="card-title">
+                                PERFECT IMPERFECT
+                            </Typography>
+                            <div class="divider"></div>
+                            <Typography className="card-desc">
+                                Lorem ipsum dolor sit amet, consec<br />
+                                tetuer adipiscing elit. Aenean comm odo<br />
+                                ligula eget dolor. Aenean cum massa.<br />
+                                Cum sociis Theme natoque penatibus et<br />
+                                magnis dis...
+                            </Typography>
+                            <Typography className="card-meta">
+                                By Marc Veyne
+                            </Typography>
+                        </CardContent>
+                    </Box>
+
+                    <Box className="pink-box">
+                        <Typography variant='h6'>
+                            The real voyage of discovery<br />
+                            consists not in seeking new<br />
+                            landscapes, but in new eyes.
                         </Typography>
-                    </CardContent>
+                        <Typography variant='h4'>
+                            - MARCEL PROUST -
+                        </Typography>
+                    </Box>
                 </Box>
-                <Box className="blog-card"></Box>
-                <Box className="blog-card"></Box>
+                <Box className="box-column">
+
+                    <Box className="blog-card">
+                        <Box className="cardimg">
+                            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/blog-post-10-m.jpg" alt="" />
+                        </Box>
+                        <CardContent className="card-content">
+                            <Typography className="card-meta">
+                                February 20, 2017 / Architecture
+                            </Typography>
+                            <Typography className="card-title">
+                                GOLDEN DESIGN RULES
+                            </Typography>
+                            <div class="divider"></div>
+                            <Typography className="card-desc">
+                                Lorem ipsum dolor sit amet, consec<br />
+                                tetuer adipiscing elit. Aenean comm odo<br />
+                                ligula eget dolor. Aenean cum massa.<br />
+                                Cum sociis Theme natoque penatibus et<br />
+                                magnis dis...
+                            </Typography>
+                            <Typography className="card-meta">
+                                By Marc Veyne
+                            </Typography>
+                        </CardContent>
+                    </Box>
+                    <Box className="blog-card">
+                        <Box className="cardimg">
+                            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/blog-post-10-m.jpg" alt="" />
+                        </Box>
+                        <CardContent className="card-content">
+                            <Typography className="card-meta">
+                                February 20, 2017 / Architecture
+                            </Typography>
+                            <Typography className="card-title">
+                                GOLDEN DESIGN RULES
+                            </Typography>
+                            <div class="divider"></div>
+                            <Typography className="card-desc">
+                                Lorem ipsum dolor sit amet, consec<br />
+                                tetuer adipiscing elit. Aenean comm odo<br />
+                                ligula eget dolor. Aenean cum massa.<br />
+                                Cum sociis Theme natoque penatibus et<br />
+                                magnis dis...
+                            </Typography>
+                            <Typography className="card-meta">
+                                By Marc Veyne
+                            </Typography>
+                        </CardContent>
+                    </Box>
+                    
+                </Box>
+                <Box className="blog-card">
+                    <Box className="blog-card">
+                        <Box className="cardimg">
+                            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/blog-post-9-m.jpg" alt="" />
+                        </Box>
+                        <CardContent className="card-content">
+                            <Typography className="card-meta">
+                                February 20, 2017 / Architecture
+                            </Typography>
+                            <Typography className="card-title">
+                                GOLDEN DESIGN RULES
+                            </Typography>
+                            <div class="divider"></div>
+                            <Typography className="card-desc">
+                                Lorem ipsum dolor sit amet, consec<br />
+                                tetuer adipiscing elit. Aenean comm odo<br />
+                                ligula eget dolor. Aenean cum massa.<br />
+                                Cum sociis Theme natoque penatibus et<br />
+                                magnis dis...
+                            </Typography>
+                            <Typography className="card-meta">
+                                By Marc Veyne
+                            </Typography>
+                        </CardContent>
+                    </Box>
+                </Box>
             </Box>
+
+
+
+
 
 
 
