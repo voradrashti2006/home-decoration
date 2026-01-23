@@ -8,6 +8,7 @@ import About from './pages/About';
 import Gallery2 from './pages/Gallery2';
 import Gallery3 from './pages/Gallery3';
 import Blog from './pages/Blog';
+import Shop from './pages/Shop';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       {/* <About></About> */}
       {/* <Gallery2></Gallery2> */}
       {/* <Gallery3></Gallery3> */}
-      <Blog></Blog>
+      {/* <Blog></Blog> */}
+      <Shop></Shop>
 
     </>
   );

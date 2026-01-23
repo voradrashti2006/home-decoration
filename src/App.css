@@ -1591,7 +1591,7 @@ p {
     background-color: #B7B7B7;
     width: 100%;
     height: 135px;
-    padding: 33px;
+    padding: 35px;
 }
 
 .grey-box h5 {
@@ -1607,7 +1607,7 @@ p {
 
 .grey-box a {
     color: #fff;
-    font-size: 18px !important;
+    font-size: 17px !important;
     font-style: italic !important;
     font-family: "Libre Baskerville", serif !important;
     text-decoration: none;
@@ -1625,7 +1625,7 @@ p {
 }
 
 .pink-box h6 {
-    font-size: 23px !important;
+    font-size: 21px !important;
     font-family: Libre Baskerville !important;
     color: #fff !important;
     cursor: pointer !important;
@@ -1649,4 +1649,17 @@ p {
     margin-bottom: 30px !important;
     line-height: 2px !important;
     text-align: center;
+}
+
+
+/* =====================================Shop-Section===============================  */
+
+.shop {
+    display: flex;
+}
+
+.box-pro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
