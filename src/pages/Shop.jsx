@@ -19,8 +19,21 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormHelperText from '@mui/material/FormHelperText';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+import Button from '@mui/material/Button';
+import Rating from '@mui/material/Rating';
+
 
 function Shop() {
+    const [age, setAge] = React.useState('');
+
+    const handleChange = (event) => {
+        setAge(event.target.value);
+    };
     return (
         <>
             <AppBar position="static" color="default" className="appbar">
@@ -155,7 +168,7 @@ function Shop() {
             </AppBar>
 
             <Box className="hero-sec">
-                <Typography variant="h1">Blog Masonry</Typography>
+                <Typography variant="h1">Shop</Typography>
             </Box>
 
 
@@ -170,7 +183,29 @@ function Shop() {
 
             <Box className="shop">
                 <Box className="box-pro">
-                    <Box className="pro-sec">
+                    <Box className="topsec">
+                        <p className='toptext'>Showing all 12 results</p>
+                        <div>
+                            <FormControl sx={{ m: 1, minWidth: 120 }} className='box'>
+                                <Select
+                                    value={age}
+                                    onChange={handleChange}
+                                    displayEmpty
+                                    inputProps={{ 'aria-label': 'Without label' }}
+                                >
+                                    <MenuItem value="">
+                                        <em className='input'>Default sorting</em>
+                                    </MenuItem>
+                                    <MenuItem value={10}>Sort by popularity</MenuItem>
+                                    <MenuItem value={20}>Sort by average rating</MenuItem>
+                                    <MenuItem value={30}>Sort by latest</MenuItem>
+                                    <MenuItem value={40}>Sort by price: low to high</MenuItem>
+                                    <MenuItem value={50}>Sort by price: high to low</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
+                    </Box>
+                    <Box className="pro-sec" sx={{marginRight: "0px"}}>
                         <Box className="product-card">
                             <Box className="img-box">
                                 <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-7-660x660.jpg" alt="" />
@@ -215,7 +250,7 @@ function Shop() {
                             </Typography>
                         </Box>
                     </Box>
-                    <Box className="pro-sec">
+                    <Box className="pro-sec" sx={{marginRight: "0px"}}>
                         <Box className="product-card">
                             <Box className="img-box">
                                 <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-1-660x660.jpg" alt="" />
@@ -260,7 +295,7 @@ function Shop() {
                         </Box>
 
                     </Box>
-                    <Box className="pro-sec">
+                    <Box className="pro-sec" sx={{marginRight: "0px"}}>
                         <Box className="product-card">
                             <Box className="img-box">
                                 <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-5-660x660.jpg" alt="" />
@@ -305,7 +340,7 @@ function Shop() {
                             </Typography>
                         </Box>
                     </Box>
-                    <Box className="pro-sec">
+                    <Box className="pro-sec" sx={{marginRight: "0px"}}>
                         <Box className="product-card">
                             <Box className="img-box">
                                 <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-8-660x660.jpg" alt="" />
@@ -346,14 +381,85 @@ function Shop() {
                             <Typography variant='h3'>WIRE LAMP</Typography>
                             <Typography className="category">Home</Typography>
                             <Typography className="price">
-
                                 <span className="new">$12.00</span>
                             </Typography>
                         </Box>
                     </Box>
                 </Box>
                 <Box className="top-pro">
+                    <Box className="sidebar">
+                        <Box className="filter-text">
+                            <Typography className="price-range">
+                                Price: $10 — $190
+                            </Typography>
 
+                            <Button className="filter-btn">FILTER</Button>
+                        </Box>
+                        <Typography className="top-title">
+                            TOP PRODUCTS
+                        </Typography>
+
+                        {/* Product 1 */}
+                        <Box className="product">
+                            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-8-660x660.jpg" alt="" />
+                            <Box className="product-info">
+                                <Typography className="product-name">
+                                    Red Chair
+                                </Typography>
+
+                                <Rating value={0} readOnly size="small" />
+
+                                <Typography className="price">
+                                    $190.00
+                                </Typography>
+                            </Box>
+                        </Box>
+
+                        {/* Product 2 */}
+                        <Box className="product">
+                            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-5-660x660.jpg" alt="" />
+
+                            <Box className="product-info">
+                                <Typography className="product-name">
+                                    Gold Ribbon
+                                </Typography>
+
+                                <Rating value={0} readOnly size="small" />
+
+                                <Typography className="price">
+                                    $10.00
+                                </Typography>
+                            </Box>
+                        </Box>
+
+                        {/* Product 3 */}
+                        <Box className="product">
+                            <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-10-660x660.jpg" alt="" />
+
+                            <Box className="product-info">
+                                <Typography className="product-name">
+                                    Pink Coral
+                                </Typography>
+
+                                <Rating value={0} readOnly size="small" />
+
+                                <Typography className="old-price">
+                                    $17.00
+                                </Typography>
+
+                                <Typography className="price">
+                                    $13.00
+                                </Typography>
+                            </Box>
+                        </Box>
+                    </Box>
+
+                    <Box className='side-text'>
+                        <Typography variant="h3">TAGS</Typography>
+                    <p>Air, Black, Blue, Candle, Casual,<br /> Classic, Decoration, Gold, Lamp,<br /> Light, Modern, Pink, Red, Soft</p>
+                    <input type="text" placeholder='Search Products…' />
+                    <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/Blog-Sidebar-2.jpg" alt="" />
+                    </Box>
                 </Box>
             </Box>
 

@@ -448,7 +448,7 @@ ul {
 .pro-sec {
     display: flex;
     gap: 30px;
-    margin-left: 7%;
+    margin-left: 6%;
     margin-right: 7%;
 }
 
@@ -1661,5 +1661,150 @@ p {
 .box-pro {
     display: flex;
     flex-direction: column;
+    width: 83%;
+}
+
+.topsec {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.toptext {
+    margin-right: 23%;
+    margin-left: -11%;
+}
+
+.css-hs8t5g-MuiFormControl-root {
+    margin-left: 15% !important;
+}
+
+.input {
+    padding-right: 98px !important;
+}
+
+.side-text h3 {
+    font-size: 15px;
+    letter-spacing: 4.5px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #505050;
+    font-weight: 700;
+    margin-bottom: 22px;
+    line-height: 2px;
+
+}
+
+.side-text p {
+    color: #999;
+    font-style: italic;
+    font-size: 18px !important;
+    font-family: Libre Baskerville;
+    margin-bottom: 25px !important;
+}
+
+.side-text input {
+    margin-bottom: 32px;
+    padding: 17px 27% 17px 20px;
+    font-size: 14px;
+    color: #999;
+    border: 1px solid #999;
+    font-style: italic;
+}
+
+
+.top-pro {
+    margin-left: -9%;
+}
+
+.sidebar {
+    width: 260px;
+    padding: 20px 0px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.filter-text {
+    display: flex;
+    gap: 20px;
+}
+
+.price-range {
+    font-size: 15px !important;
+    color: #777;
+    margin-top: 10px !important;
+
+}
+
+.filter-btn {
+    background-color: #c9a24d !important;
+    color: #fff !important;
+    font-size: 14px !important;
+
+    padding: 6px 17px !important;
+    border-radius: 0 !important;
+    margin-bottom: 30px !important;
+    font-weight: 500 !important;
+}
+
+.filter-btn:hover {
+    background-color: transparent !important;
+    border: 1px solid #c8a24a;
+    color: #c8a24a !important;
+}
+
+.top-title {
+    font-size: 15px !important;
+    letter-spacing: 4.5px !important;
+    font-family: "Nunito Sans", sans-serif !important;
+    color: #505050 !important;
+    font-weight: 700 !important;
+    margin-bottom: 37px !important;
+    line-height: 2px !important;
+    margin-top: 15px !important;
+}
+
+.product {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 32px;
+}
+
+.product img {
+    width: 100px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 15px !important;
+    margin-bottom: 5px !important;
+    color: #505050;
+}
+
+.price {
+    font-size: 15px !important;
+    font-weight: 500;
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+    color: #505050;
+}
+
+.old-price {
+    font-size: 13px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.side-text {
+    width: 260px;
+    margin-left: 20px;
+}
+
+.side-text img {
     width: 100%;
 }
