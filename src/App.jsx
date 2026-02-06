@@ -9,6 +9,7 @@ import Gallery2 from './pages/Gallery2';
 import Gallery3 from './pages/Gallery3';
 import Blog from './pages/Blog';
 import Shop from './pages/Shop';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       {/* <Gallery2></Gallery2> */}
       {/* <Gallery3></Gallery3> */}
       {/* <Blog></Blog> */}
-      <Shop></Shop>
+      {/* <Shop></Shop> */}
+      <Contact></Contact>
 
     </>
   );

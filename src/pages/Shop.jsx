@@ -19,20 +19,26 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
-import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
-import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Button from '@mui/material/Button';
 import Rating from '@mui/material/Rating';
-
-
+import Slider from '@mui/material/Slider';
+function valuetext(value) {
+    return `${value}°C`;
+}
 function Shop() {
     const [age, setAge] = React.useState('');
 
     const handleChange = (event) => {
         setAge(event.target.value);
+    };
+
+    const [value, setValue] = React.useState([20, 37]);
+
+    const handleChange1 = (event, newValue) => {
+        setValue(newValue);
     };
     return (
         <>
@@ -205,7 +211,7 @@ function Shop() {
                             </FormControl>
                         </div>
                     </Box>
-                    <Box className="pro-sec" sx={{marginRight: "0px"}}>
+                    <Box className="pro-sec" sx={{ marginRight: "0px" }}>
                         <Box className="product-card">
                             <Box className="img-box">
                                 <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-7-660x660.jpg" alt="" />
@@ -250,7 +256,7 @@ function Shop() {
                             </Typography>
                         </Box>
                     </Box>
-                    <Box className="pro-sec" sx={{marginRight: "0px"}}>
+                    <Box className="pro-sec" sx={{ marginRight: "0px" }}>
                         <Box className="product-card">
                             <Box className="img-box">
                                 <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-1-660x660.jpg" alt="" />
@@ -295,7 +301,7 @@ function Shop() {
                         </Box>
 
                     </Box>
-                    <Box className="pro-sec" sx={{marginRight: "0px"}}>
+                    <Box className="pro-sec" sx={{ marginRight: "0px" }}>
                         <Box className="product-card">
                             <Box className="img-box">
                                 <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-5-660x660.jpg" alt="" />
@@ -340,7 +346,7 @@ function Shop() {
                             </Typography>
                         </Box>
                     </Box>
-                    <Box className="pro-sec" sx={{marginRight: "0px"}}>
+                    <Box className="pro-sec" sx={{ marginRight: "0px" }}>
                         <Box className="product-card">
                             <Box className="img-box">
                                 <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/02/product-img-8-660x660.jpg" alt="" />
@@ -388,6 +394,21 @@ function Shop() {
                 </Box>
                 <Box className="top-pro">
                     <Box className="sidebar">
+
+
+                        <Typography className="top-title">
+                            FILTER BY PRICE
+                        </Typography>
+
+                        <Box sx={{ width: 235 }}>
+                            <Slider
+                                getAriaLabel={() => 'Temperature range'}
+                                value={value}
+                                onChange={handleChange1}
+                                getAriaValueText={valuetext}
+                                sx={{ color: '#c8a24a', marginTop: '-17px', marginBottom: '17px' }}
+                            />
+                        </Box>
                         <Box className="filter-text">
                             <Typography className="price-range">
                                 Price: $10 — $190
@@ -456,9 +477,9 @@ function Shop() {
 
                     <Box className='side-text'>
                         <Typography variant="h3">TAGS</Typography>
-                    <p>Air, Black, Blue, Candle, Casual,<br /> Classic, Decoration, Gold, Lamp,<br /> Light, Modern, Pink, Red, Soft</p>
-                    <input type="text" placeholder='Search Products…' />
-                    <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/Blog-Sidebar-2.jpg" alt="" />
+                        <p>Air, Black, Blue, Candle, Casual,<br /> Classic, Decoration, Gold, Lamp,<br /> Light, Modern, Pink, Red, Soft</p>
+                        <input type="text" placeholder='Search Products…' />
+                        <img src="https://all4home.qodeinteractive.com/wp-content/uploads/2017/03/Blog-Sidebar-2.jpg" alt="" />
                     </Box>
                 </Box>
             </Box>

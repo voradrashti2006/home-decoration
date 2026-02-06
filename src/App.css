@@ -1677,7 +1677,7 @@ p {
 }
 
 .css-hs8t5g-MuiFormControl-root {
-    margin-left: 15% !important;
+    margin-left: 13% !important;
 }
 
 .input {
@@ -1685,7 +1685,7 @@ p {
 }
 
 .side-text h3 {
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 4.5px;
     font-family: "Nunito Sans", sans-serif;
     color: #505050;
@@ -1786,6 +1786,10 @@ p {
     color: #505050;
 }
 
+.product-name:hover {
+    color: #c8a24a;
+}
+
 .price {
     font-size: 15px !important;
     font-weight: 500;
@@ -1807,4 +1811,49 @@ p {
 
 .side-text img {
     width: 100%;
+}
+
+/* =========================Contact-Section================================ */
+.herosec {
+    margin-bottom: 50%;
+}
+
+.hero-img {
+    width: 100%;
+    position: absolute;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.herotext {
+    position: relative;
+}
+
+.subname {
+    font-size: 15px !important;
+    letter-spacing: 3px !important;
+    color: #c8a24a !important;
+    font-weight: 700 !important;
+    display: flex;
+    justify-content: center;
+}
+
+.herotext h1 {
+    font-family: Libre Baskerville;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 36px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center !important;
+}
+
+.herotext p {
+    font-size: 19px;
+    color: #888;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
 }
