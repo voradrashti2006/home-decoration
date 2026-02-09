@@ -19,8 +19,23 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from '@mui/icons-material/X';
+import { styled } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import Button from '@mui/material/Button';
 
 function Contact() {
+
+    const Item = styled(Paper)(({ theme }) => ({
+        backgroundColor: '#fff',
+        ...theme.typography.body2,
+        padding: theme.spacing(1),
+        textAlign: 'center',
+        color: (theme.vars ?? theme).palette.text.secondary,
+        ...theme.applyStyles('dark', {
+            backgroundColor: '#1A2027',
+        }),
+    }));
+
     return (
         <>
             <AppBar position="static" color="default" className="appbar">
@@ -129,7 +144,51 @@ function Contact() {
 
 
 
+            <Box className="our-office">
+                <Box sx={{ flexGrow: 1 }}>
+                    <Grid container spacing={6} columns={12} justifyContent="center">
+                        <Grid size={6} className="col-1">
+                            <h2>OUR OFFICE</h2>
+                            <p className="con-text">Etiam convallis, felis quis dapibus dictum, libero mauris luctus nunc, non<br />
+                                fringilla purus ligula non justo. Non fringilla purus ligula non justo.</p>
+                            <Box className="contant">
+                                <Grid size={3} className="colspan-1">
+                                    <h5>BARSELONA</h5>
+                                    <p className="con-text">198 West 21th Street, Suite 721<br /> Barselona 20020</p>
+                                    <p className="con-text">Email: all4home@example.com<br />
+                                        Phone: +88 (0) 101 0000 000</p>
+                                </Grid>
+                                <Grid size={3} className="colspan-1">
+                                    <h5>NEW YORK</h5>
+                                    <p className="con-text">198 West 21th Street, Suite 721<br />
+                                        Barselona 20020</p>
+                                    <p className="con-text">Email: all4home@example.com<br />
+                                        Phone: +88 (0) 101 0000 000</p>
+                                </Grid>
+                            </Box>
+                        </Grid>
+                        <Grid size={6} className="col-2">
+                            <input type="text" placeholder="Your Name" className="name-email" />
+                            <input type="text" placeholder="E-mail" className="name-email" />
+                            <input type="text" placeholder="Your Message" className="message" />
+                            <Button className="btn">
+                                READ ALL
+                            </Button>
+                        </Grid>
+                    </Grid>
+                </Box>
+            </Box>
 
+
+            <Box sx={{ width: "100%", height: "500px" }}>
+                <iframe
+                    src="https://www.google.com/maps?q=40.7447,-73.6407&z=14&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    loading="lazy"
+                />
+            </Box>
 
 
             <Box className="footer">

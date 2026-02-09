@@ -1814,46 +1814,98 @@ p {
 }
 
 /* =========================Contact-Section================================ */
+
 .herosec {
-    margin-bottom: 50%;
+    position: relative;
+    width: 100%;
 }
+
 
 .hero-img {
     width: 100%;
-    position: absolute;
 }
 
 .hero-img img {
     width: 100%;
+    display: block;
 }
 
 .herotext {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
 }
 
 .subname {
-    font-size: 15px !important;
-    letter-spacing: 3px !important;
+    font-size: 18px !important;
+    letter-spacing: 3px;
     color: #c8a24a !important;
-    font-weight: 700 !important;
-    display: flex;
-    justify-content: center;
+    font-weight: 700;
+    margin-bottom: -10px;
 }
 
 .herotext h1 {
-    font-family: Libre Baskerville;
+    font-family: "Libre Baskerville";
     font-weight: 400;
     font-style: italic;
-    font-size: 36px;
+    font-size: 80px;
+    color: #505050;
     margin-bottom: 15px;
-    display: flex;
-    justify-content: center !important;
 }
 
 .herotext p {
     font-size: 19px;
     color: #888;
     line-height: 1.6;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.our-office {
+    margin: 10% 8%;
+}
+
+.our-office h2 {
+    font-size: 28px !important;
+    letter-spacing: 2px;
+    line-height: 1.44em;
+    color: #505050 !important;
+    font-weight: 600 !important;
+    margin-bottom: -10px;
+}
+
+.con-text {
+    font-size: 15px;
+    color: #888;
+    line-height: 1.6;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.contant {
     display: flex;
-    justify-content: center;
+}
+
+.col-2 .name-email {
+    padding: 15px 25px;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.col-2 .message {
+    padding: 15px 25px 28% 25px;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.colspan-1 h5 {
+    font-size: 20px !important;
+    letter-spacing: 2px;
+    line-height: 1.44em;
+    color: #505050 !important;
+    font-weight: 600 !important;
+    margin-bottom: -10px;
 }
