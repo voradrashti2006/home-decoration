@@ -43,135 +43,105 @@ function Shop() {
     return (
         <>
             <AppBar position="static" color="default" className="appbar">
-                <Toolbar className="toolbar">
-                    {/* LOGO LEFT */}
-                    <Box className="logo">
-                        <HomeIcon className="logo-icon" />
-                        <span className="logo-text">
-                            HOME<span>Aura</span>
-                        </span>
-                    </Box>
+            <Toolbar className="toolbar">
 
-                    {/* MENU TOGGLE */}
-                    <input type="checkbox" id="menu-toggle" className="menu-toggle" />
+                {/* LOGO LEFT */}
+                <Box className="logo">
+                    <HomeIcon className="logo-icon" />
+                    <span className="logo-text">
+                        HOME<span>Aura</span>
+                    </span>
+                </Box>
 
-                    {/* MENU BUTTON RIGHT */}
-                    <label htmlFor="menu-toggle" className="menu-btn">
-                        <MenuIcon className="menu-icon" />
-                        <CloseIcon className="close-icon" />
-                    </label>
+                {/* MENU TOGGLE */}
+                <input type="checkbox" id="menu-toggle" className="menu-toggle" />
 
-                    {/* NAVBAR */}
-                    <ul className="navbar">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
+                {/* MENU BUTTON */}
+                <label htmlFor="menu-toggle" className="menu-btn">
+                    <MenuIcon />
+                </label>
 
-                        {/* Pages Dropdown */}
-                        <li className="dropdown">
-                            <a href="#">Pages</a>
-                            <input
-                                type="checkbox"
-                                id="pages-toggle"
-                                className="dropdown-toggle"
-                            />
-                            <ul className="dropdown-menu">
-                                <li>
-                                    <a href="#">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Services</a>
-                                </li>
-                            </ul>
-                        </li>
 
-                        {/* Portfolio Dropdown */}
-                        <li className="dropdown">
-                            <a href="#">Portfolio</a>
-                            <input
-                                type="checkbox"
-                                id="portfolio-toggle"
-                                className="dropdown-toggle"
-                            />
-                            <ul className="dropdown-menu">
-                                <li>
-                                    <a href="#">Web Design</a>
-                                </li>
-                                <li>
-                                    <a href="#">Graphic Design</a>
-                                </li>
-                            </ul>
-                        </li>
+                {/* NAVBAR MENU */}
+                <ul className="navbar">
 
-                        {/* Blog Dropdown */}
-                        <li className="dropdown">
-                            <a href="#">Blog</a>
-                            <input
-                                type="checkbox"
-                                id="blog-toggle"
-                                className="dropdown-toggle"
-                            />
-                            <ul className="dropdown-menu">
-                                <li>
-                                    <a href="#">Latest Posts</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tutorials</a>
-                                </li>
-                            </ul>
-                        </li>
+                    {/* CLOSE BUTTON INSIDE MENU */}
+                    <li className="close-btn">
+                        <label htmlFor="menu-toggle">
+                            <CloseIcon />
+                        </label>
+                    </li>
 
-                        {/* Shop Dropdown */}
-                        <li className="dropdown">
-                            <a href="#">Shop</a>
-                            <input
-                                type="checkbox"
-                                id="shop-toggle"
-                                className="dropdown-toggle"
-                            />
-                            <ul className="dropdown-menu">
-                                <li>
-                                    <a href="#">Products</a>
-                                </li>
-                                <li>
-                                    <a href="#">Cart</a>
-                                </li>
-                            </ul>
-                        </li>
+                    <li><a href="#">Home</a></li>
 
-                        {/* Contact Dropdown */}
-                        <li className="dropdown">
-                            <a href="#">Contact</a>
-                            <input
-                                type="checkbox"
-                                id="contact-toggle"
-                                className="dropdown-toggle"
-                            />
-                            <ul className="dropdown-menu">
-                                <li>
-                                    <a href="#">Contact Form</a>
-                                </li>
-                                <li>
-                                    <a href="#">Location</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                    {/* Pages Dropdown */}
+                    <li className="dropdown">
+                        <a href="#">Pages</a>
+                        <input type="checkbox" id="pages-toggle" className="dropdown-toggle" />
+                        <ul className="dropdown-menu">
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </li>
 
-                    {/* RIGHT ICONS */}
-                    <Box className="right-icons">
-                        <div className="search-wrapper">
-                            <SearchIcon className="search-icon" />
-                            <input
-                                type="text"
-                                className="search-input"
-                                placeholder="Search"
-                            />
-                        </div>
-                        <ShoppingCartIcon className="cart-icon" />
-                    </Box>
-                </Toolbar>
-            </AppBar>
+
+                    {/* Portfolio Dropdown */}
+                    <li className="dropdown">
+                        <a href="#">Portfolio</a>
+                        <input type="checkbox" id="portfolio-toggle" className="dropdown-toggle" />
+                        <ul className="dropdown-menu">
+                            <li><a href="#">II Columns</a></li>
+                            <li><a href="#">III Columns</a></li>
+                        </ul>
+                    </li>
+
+                    {/* Blog Dropdown */}
+                    <li className="dropdown">
+                        <a href="#">Blog</a>
+                        <input type="checkbox" id="blog-toggle" className="dropdown-toggle" />
+                        <ul className="dropdown-menu">
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+
+                    {/* Shop Dropdown */}
+                    <li className="dropdown">
+                        <a href="#">Shop</a>
+                        <input type="checkbox" id="shop-toggle" className="dropdown-toggle" />
+                        <ul className="dropdown-menu">
+                            <li><a href="#">Shop</a></li>
+                        </ul>
+                    </li>
+
+                    {/* Contact Dropdown */}
+                    <li className="dropdown">
+                        <a href="#">Contact</a>
+                        <input type="checkbox" id="contact-toggle" className="dropdown-toggle" />
+                        <ul className="dropdown-menu">
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </li>
+                    {/* LOGIN BUTTON INSIDE SIDE MENU */}
+                    <li className="mobile-login">
+                        <Button className="bttn full-bttn">Log in</Button>
+                    </li>
+                </ul>
+
+                {/* RIGHT ICONS */}
+                <Box className="right-icons">
+                    <div className="search-wrapper">
+                        <SearchIcon className="search-icon" />
+                        <input type="text" className="search-input" placeholder="Search" />
+                    </div>
+
+                    <ShoppingCartIcon className="cart-icon" />
+                    {/* BUTTON */}
+                    <Button className="bttn">
+                        Log in
+                    </Button>
+                </Box>
+
+            </Toolbar>
+        </AppBar>
 
             <Box className="hero-sec">
                 <Typography variant="h1">Shop</Typography>

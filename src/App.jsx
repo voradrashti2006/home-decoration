@@ -1,5 +1,6 @@
 
 import './App.css';
+import './Respon.css';
 import Header from './pages/Header'
 import Hero from './pages/Hero'
 import Product from './pages/Product';
@@ -23,7 +24,7 @@ function App() {
       {/* <Gallery3></Gallery3> */}
       {/* <Blog></Blog> */}
       {/* <Shop></Shop> */}
-      <Contact></Contact>
+      {/* <Contact></Contact> */}
 
     </>
   );

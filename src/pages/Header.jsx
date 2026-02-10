@@ -7,7 +7,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-
+import Button from '@mui/material/Button';
 
 const Header = () => {
     return (
@@ -25,14 +25,22 @@ const Header = () => {
                 {/* MENU TOGGLE */}
                 <input type="checkbox" id="menu-toggle" className="menu-toggle" />
 
-                {/* MENU BUTTON RIGHT */}
+                {/* MENU BUTTON */}
                 <label htmlFor="menu-toggle" className="menu-btn">
-                    <MenuIcon className="menu-icon" />
-                    <CloseIcon className="close-icon" />
+                    <MenuIcon />
                 </label>
 
-                {/* NAVBAR */}
+
+                {/* NAVBAR MENU */}
                 <ul className="navbar">
+
+                    {/* CLOSE BUTTON INSIDE MENU */}
+                    <li className="close-btn">
+                        <label htmlFor="menu-toggle">
+                            <CloseIcon />
+                        </label>
+                    </li>
+
                     <li><a href="#">Home</a></li>
 
                     {/* Pages Dropdown */}
@@ -41,17 +49,17 @@ const Header = () => {
                         <input type="checkbox" id="pages-toggle" className="dropdown-toggle" />
                         <ul className="dropdown-menu">
                             <li><a href="#">About Us</a></li>
-                            <li><a href="#">Services</a></li>
                         </ul>
                     </li>
+
 
                     {/* Portfolio Dropdown */}
                     <li className="dropdown">
                         <a href="#">Portfolio</a>
                         <input type="checkbox" id="portfolio-toggle" className="dropdown-toggle" />
                         <ul className="dropdown-menu">
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Graphic Design</a></li>
+                            <li><a href="#">II Columns</a></li>
+                            <li><a href="#">III Columns</a></li>
                         </ul>
                     </li>
 
@@ -60,8 +68,7 @@ const Header = () => {
                         <a href="#">Blog</a>
                         <input type="checkbox" id="blog-toggle" className="dropdown-toggle" />
                         <ul className="dropdown-menu">
-                            <li><a href="#">Latest Posts</a></li>
-                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Blog</a></li>
                         </ul>
                     </li>
 
@@ -70,8 +77,7 @@ const Header = () => {
                         <a href="#">Shop</a>
                         <input type="checkbox" id="shop-toggle" className="dropdown-toggle" />
                         <ul className="dropdown-menu">
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Shop</a></li>
                         </ul>
                     </li>
 
@@ -80,9 +86,12 @@ const Header = () => {
                         <a href="#">Contact</a>
                         <input type="checkbox" id="contact-toggle" className="dropdown-toggle" />
                         <ul className="dropdown-menu">
-                            <li><a href="#">Contact Form</a></li>
-                            <li><a href="#">Location</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
+                    </li>
+                    {/* LOGIN BUTTON INSIDE SIDE MENU */}
+                    <li className="mobile-login">
+                        <Button className="bttn full-bttn">Log in</Button>
                     </li>
                 </ul>
 
@@ -92,7 +101,12 @@ const Header = () => {
                         <SearchIcon className="search-icon" />
                         <input type="text" className="search-input" placeholder="Search" />
                     </div>
+
                     <ShoppingCartIcon className="cart-icon" />
+                    {/* BUTTON */}
+                    <Button className="bttn">
+                        Log in
+                    </Button>
                 </Box>
 
             </Toolbar>

@@ -5,21 +5,18 @@
     font-family: Arial, sans-serif;
 }
 
-/* ====================== Header ===================== */
-/* RESET */
+/* ====================== Header-Start ===================== */
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-/* APPBAR */
 .appbar {
     background: #fff !important;
     border-bottom: 1px solid #ddd;
 }
 
-/* TOOLBAR */
 .toolbar {
     display: flex;
     align-items: center;
@@ -29,7 +26,6 @@ ul {
     position: relative;
 }
 
-/* LOGO */
 .logo {
     display: flex;
     align-items: center;
@@ -60,7 +56,6 @@ ul {
     color: #ff9900;
 }
 
-/* NAVBAR */
 .navbar {
     display: flex;
     gap: 30px;
@@ -72,7 +67,6 @@ ul {
     font-weight: 500;
 }
 
-/* DROPDOWN */
 .dropdown {
     position: relative;
 }
@@ -109,13 +103,37 @@ ul {
     transform: translateY(0);
 }
 
-/* RIGHT ICONS */
 .right-icons {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
+.bttn {
+    padding: 14px 55px !important;
+    background: #c8a24a !important;
+    color: #fff !important;
+    font-size: 13px !important;
+    letter-spacing: 2px !important;
+    font-weight: 700 !important;
+    border-radius: 0 !important;
+    margin-left: 15px;
+}
+
+.bttn:hover {
+    background-color: transparent !important;
+    border: 1px solid #c8a24a;
+    color: #505050 !important;
+}
+
+.mobile-login {
+    display: none;
+}
+
+.full-btn {
+    width: 100%;
+    margin: 20px 0;
+}
 .search-wrapper {
     position: relative;
 }
@@ -144,7 +162,6 @@ ul {
     color: #ff9900;
 }
 
-/* MENU BUTTON */
 .menu-toggle {
     display: none;
 }
@@ -163,87 +180,13 @@ ul {
     display: none;
 }
 
-/* DROPDOWN TOGGLE HIDDEN */
 .dropdown-toggle {
     display: none;
 }
 
-/* ===========================
-  MOBILE <768
-=========================== */
-@media (max-width: 768px) {
+/* ====================== Header-End ===================== */
 
-    /* NAVBAR SLIDE FROM RIGHT */
-    .navbar {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 70%;
-        height: 100vh;
-        background: #fff;
-        flex-direction: column;
-        padding-top: 100px;
-        align-items: start;
-        gap: 30px;
-        transition: all 0.3s ease;
-        padding-left: 20px;
-        z-index: 999;
-    }
-
-    /* SHOW NAVBAR WHEN MENU TOGGLE CHECKED */
-    .menu-toggle:checked+.menu-btn~.navbar {
-        right: 0;
-    }
-
-    /* MENU BUTTON RIGHT SIDE */
-    .menu-btn {
-        display: block;
-    }
-
-    /* SWITCH ICONS */
-    .menu-toggle:checked+.menu-btn .menu-icon {
-        display: none;
-    }
-
-    .menu-toggle:checked+.menu-btn .close-icon {
-        display: block;
-    }
-
-    /* HIDE RIGHT ICONS */
-    .right-icons {
-        display: none;
-    }
-
-    /* MOBILE DROPDOWN */
-    .dropdown:hover .dropdown-menu {
-        display: none;
-    }
-
-    .dropdown .dropdown-menu {
-        position: static;
-        display: none;
-        opacity: 1;
-        visibility: visible;
-        padding-left: 20px;
-    }
-
-    /* OPEN DROPDOWN WHEN TOGGLE CHECKED */
-    .dropdown-toggle:checked~.dropdown-menu {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* LABEL CLICK ON MOBILE DROPDOWN */
-    .dropdown a {
-        display: flex;
-        justify-content: space-between;
-        cursor: pointer;
-    }
-}
-
-
-
-/* ======================= Hero-Section ================= */
+/* ======================= Hero-Start ================= */
 
 .hero .silder img {
     width: 100%;
@@ -1860,7 +1803,7 @@ p {
     font-size: 19px;
     color: #888;
     line-height: 1.6;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif !important;
 }
 
 .our-office {
@@ -1869,22 +1812,25 @@ p {
 
 .our-office h2 {
     font-size: 28px !important;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     line-height: 1.44em;
     color: #505050 !important;
     font-weight: 600 !important;
-    margin-bottom: -10px;
+    margin-top: 13px;
+    margin-bottom: 13px;
 }
 
 .con-text {
     font-size: 15px;
     color: #888;
     line-height: 1.6;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif !important;
+    margin-bottom: 25px;
 }
 
 .contant {
     display: flex;
+    gap: 40px;
 }
 
 .col-2 .name-email {
@@ -1907,5 +1853,6 @@ p {
     line-height: 1.44em;
     color: #505050 !important;
     font-weight: 600 !important;
-    margin-bottom: -10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }

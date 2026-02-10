@@ -39,91 +39,105 @@ function Contact() {
     return (
         <>
             <AppBar position="static" color="default" className="appbar">
-                <Toolbar className="toolbar">
+            <Toolbar className="toolbar">
 
-                    {/* LOGO LEFT */}
-                    <Box className="logo">
-                        <HomeIcon className="logo-icon" />
-                        <span className="logo-text">
-                            HOME<span>Aura</span>
-                        </span>
-                    </Box>
+                {/* LOGO LEFT */}
+                <Box className="logo">
+                    <HomeIcon className="logo-icon" />
+                    <span className="logo-text">
+                        HOME<span>Aura</span>
+                    </span>
+                </Box>
 
-                    {/* MENU TOGGLE */}
-                    <input type="checkbox" id="menu-toggle" className="menu-toggle" />
+                {/* MENU TOGGLE */}
+                <input type="checkbox" id="menu-toggle" className="menu-toggle" />
 
-                    {/* MENU BUTTON RIGHT */}
-                    <label htmlFor="menu-toggle" className="menu-btn">
-                        <MenuIcon className="menu-icon" />
-                        <CloseIcon className="close-icon" />
-                    </label>
+                {/* MENU BUTTON */}
+                <label htmlFor="menu-toggle" className="menu-btn">
+                    <MenuIcon />
+                </label>
 
-                    {/* NAVBAR */}
-                    <ul className="navbar">
-                        <li><a href="#">Home</a></li>
 
-                        {/* Pages Dropdown */}
-                        <li className="dropdown">
-                            <a href="#">Pages</a>
-                            <input type="checkbox" id="pages-toggle" className="dropdown-toggle" />
-                            <ul className="dropdown-menu">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Services</a></li>
-                            </ul>
-                        </li>
+                {/* NAVBAR MENU */}
+                <ul className="navbar">
 
-                        {/* Portfolio Dropdown */}
-                        <li className="dropdown">
-                            <a href="#">Portfolio</a>
-                            <input type="checkbox" id="portfolio-toggle" className="dropdown-toggle" />
-                            <ul className="dropdown-menu">
-                                <li><a href="#">Web Design</a></li>
-                                <li><a href="#">Graphic Design</a></li>
-                            </ul>
-                        </li>
+                    {/* CLOSE BUTTON INSIDE MENU */}
+                    <li className="close-btn">
+                        <label htmlFor="menu-toggle">
+                            <CloseIcon />
+                        </label>
+                    </li>
 
-                        {/* Blog Dropdown */}
-                        <li className="dropdown">
-                            <a href="#">Blog</a>
-                            <input type="checkbox" id="blog-toggle" className="dropdown-toggle" />
-                            <ul className="dropdown-menu">
-                                <li><a href="#">Latest Posts</a></li>
-                                <li><a href="#">Tutorials</a></li>
-                            </ul>
-                        </li>
+                    <li><a href="#">Home</a></li>
 
-                        {/* Shop Dropdown */}
-                        <li className="dropdown">
-                            <a href="#">Shop</a>
-                            <input type="checkbox" id="shop-toggle" className="dropdown-toggle" />
-                            <ul className="dropdown-menu">
-                                <li><a href="#">Products</a></li>
-                                <li><a href="#">Cart</a></li>
-                            </ul>
-                        </li>
+                    {/* Pages Dropdown */}
+                    <li className="dropdown">
+                        <a href="#">Pages</a>
+                        <input type="checkbox" id="pages-toggle" className="dropdown-toggle" />
+                        <ul className="dropdown-menu">
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </li>
 
-                        {/* Contact Dropdown */}
-                        <li className="dropdown">
-                            <a href="#">Contact</a>
-                            <input type="checkbox" id="contact-toggle" className="dropdown-toggle" />
-                            <ul className="dropdown-menu">
-                                <li><a href="#">Contact Form</a></li>
-                                <li><a href="#">Location</a></li>
-                            </ul>
-                        </li>
-                    </ul>
 
-                    {/* RIGHT ICONS */}
-                    <Box className="right-icons">
-                        <div className="search-wrapper">
-                            <SearchIcon className="search-icon" />
-                            <input type="text" className="search-input" placeholder="Search" />
-                        </div>
-                        <ShoppingCartIcon className="cart-icon" />
-                    </Box>
+                    {/* Portfolio Dropdown */}
+                    <li className="dropdown">
+                        <a href="#">Portfolio</a>
+                        <input type="checkbox" id="portfolio-toggle" className="dropdown-toggle" />
+                        <ul className="dropdown-menu">
+                            <li><a href="#">II Columns</a></li>
+                            <li><a href="#">III Columns</a></li>
+                        </ul>
+                    </li>
 
-                </Toolbar>
-            </AppBar>
+                    {/* Blog Dropdown */}
+                    <li className="dropdown">
+                        <a href="#">Blog</a>
+                        <input type="checkbox" id="blog-toggle" className="dropdown-toggle" />
+                        <ul className="dropdown-menu">
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+
+                    {/* Shop Dropdown */}
+                    <li className="dropdown">
+                        <a href="#">Shop</a>
+                        <input type="checkbox" id="shop-toggle" className="dropdown-toggle" />
+                        <ul className="dropdown-menu">
+                            <li><a href="#">Shop</a></li>
+                        </ul>
+                    </li>
+
+                    {/* Contact Dropdown */}
+                    <li className="dropdown">
+                        <a href="#">Contact</a>
+                        <input type="checkbox" id="contact-toggle" className="dropdown-toggle" />
+                        <ul className="dropdown-menu">
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </li>
+                    {/* LOGIN BUTTON INSIDE SIDE MENU */}
+                    <li className="mobile-login">
+                        <Button className="bttn full-bttn">Log in</Button>
+                    </li>
+                </ul>
+
+                {/* RIGHT ICONS */}
+                <Box className="right-icons">
+                    <div className="search-wrapper">
+                        <SearchIcon className="search-icon" />
+                        <input type="text" className="search-input" placeholder="Search" />
+                    </div>
+
+                    <ShoppingCartIcon className="cart-icon" />
+                    {/* BUTTON */}
+                    <Button className="bttn">
+                        Log in
+                    </Button>
+                </Box>
+
+            </Toolbar>
+        </AppBar>
 
 
             <Box className="herosec">
@@ -152,13 +166,13 @@ function Contact() {
                             <p className="con-text">Etiam convallis, felis quis dapibus dictum, libero mauris luctus nunc, non<br />
                                 fringilla purus ligula non justo. Non fringilla purus ligula non justo.</p>
                             <Box className="contant">
-                                <Grid size={3} className="colspan-1">
+                                <Grid className="colspan-1">
                                     <h5>BARSELONA</h5>
                                     <p className="con-text">198 West 21th Street, Suite 721<br /> Barselona 20020</p>
                                     <p className="con-text">Email: all4home@example.com<br />
                                         Phone: +88 (0) 101 0000 000</p>
                                 </Grid>
-                                <Grid size={3} className="colspan-1">
+                                <Grid className="colspan-1">
                                     <h5>NEW YORK</h5>
                                     <p className="con-text">198 West 21th Street, Suite 721<br />
                                         Barselona 20020</p>
