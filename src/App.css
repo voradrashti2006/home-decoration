@@ -134,6 +134,7 @@ ul {
     width: 100%;
     margin: 20px 0;
 }
+
 .search-wrapper {
     position: relative;
 }
@@ -187,6 +188,15 @@ ul {
 /* ====================== Header-End ===================== */
 
 /* ======================= Hero-Start ================= */
+.hero .silder {
+    height: 100vh;
+}
+
+.hero .silder img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
 
 .hero .silder img {
     width: 100%;
@@ -284,10 +294,10 @@ ul {
 .all-card {
     display: flex;
     gap: 40px;
-    margin-top: 7%;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 7% 40px 0 40px;
 }
+
+
 
 /* Card */
 .sale-card {
@@ -299,7 +309,9 @@ ul {
     padding: 40px;
     margin-bottom: 20px;
     cursor: pointer;
+    flex: 1;
 }
+
 
 .all-card {
     display: flex;
@@ -333,6 +345,7 @@ ul {
 
 }
 
+
 /* ================= Discount Ribbon Proper Align ================= */
 
 .discount {
@@ -340,7 +353,7 @@ ul {
     background: #ff9fb0;
     display: inline-block;
     padding: 6px 40px 6px 25px;
-    margin-left: -39px; 
+    margin-left: -39px;
 }
 
 .discount span {
@@ -350,20 +363,6 @@ ul {
     font-weight: bold;
     line-height: 1;
 }
-
-
-/* .discount::after {
-    content: "";
-    position: absolute;
-    right: -25px;
-    top: 0;
-    width: 0;
-    height: 0;
-   border-top: 34px solid transparent;
-    border-bottom: 34px solid transparent;
-    border-left: 26px solid #ff9fb0;
-} */
-
 
 /* Flower (decorative) */
 .flower {
@@ -382,19 +381,21 @@ ul {
 }
 
 
+
 /* ================== Product-Sale =================== */
 .pro-title {
     text-align: center;
-    margin-top: 6%;
-    margin-bottom: 7%;
+    margin: 6% 20px 7% 20px;
 }
 
 .pro-title h5 {
     margin-bottom: 7px;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 
 .pro-title h1 {
-    font-family: Libre Baskerville;
+    font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: italic;
     font-size: 53px;
@@ -403,15 +404,21 @@ ul {
 
 .pro-sec {
     display: flex;
-    gap: 30px;
-    margin-left: 6%;
-    margin-right: 7%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 29px;
+    margin: 0 6% 8% 6%;
 }
+
+
+
 
 .product-card {
     width: 260px;
+    flex: 0 0 23%;
     text-align: center;
     position: relative;
+    max-width: 23%;
     font-family: Georgia, serif;
     margin-bottom: 8%;
     cursor: pointer;
@@ -423,12 +430,16 @@ ul {
     overflow: hidden;
 }
 
+
 .img-box img {
     width: 100%;
-    height: 280px;
-    object-fit: cover;
+    height: auto;
     transition: 0.4s ease;
+    display: block;
 }
+
+
+
 
 /* overlay */
 .overlay {
@@ -442,10 +453,11 @@ ul {
     transition: 0.4s ease;
 }
 
+
 .overlay a {
     background: #fff;
     color: #505050;
-    padding: 18px 30px;
+    padding: 16px 26px;
     text-decoration: none;
     letter-spacing: 2px;
     font-size: 15px;
@@ -469,30 +481,33 @@ ul {
 /* sale badge */
 .sale {
     position: absolute;
-    top: 9px;
-    left: 9px;
+    top: 10px;
+    left: 10px;
     background: #caa24d;
     color: #fff;
-    font-family: Libre Baskerville;
-    font-size: 17px;
-    padding: 15px 11px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    padding: 14px 10px;
     border-radius: 50%;
     z-index: 2;
     font-style: italic;
 }
 
+
+
 .product-card h3 {
-    margin-top: 35px;
+    margin-top: 30px;
     font-size: 13px;
-    letter-spacing: 4.5px;
+    letter-spacing: 4px;
     font-family: "Nunito Sans", sans-serif;
     color: #505050;
     font-weight: 800;
     cursor: pointer;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
     line-height: 2px;
 
 }
+
 
 .product-card h3:hover {
     color: #caa24d;
@@ -501,7 +516,7 @@ ul {
 .category {
     color: #caa24d;
     font-style: italic;
-    font-family: Libre Baskerville;
+    font-family: "Libre Baskerville", serif;
     margin-bottom: 8px !important;
 }
 
@@ -1871,7 +1886,7 @@ p {
 }
 
 /* ================================Login-page=============================== */
-.checkbox{
+.checkbox {
     display: flex;
     align-items: center;
 }
