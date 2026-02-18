@@ -294,12 +294,22 @@ ul {
     position: relative;
     width: 100%;
     height: 260px;
-    background: #fffaf6;
     overflow: hidden;
     /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); */
     padding: 40px;
     margin-bottom: 20px;
     cursor: pointer;
+}
+
+.all-card {
+    display: flex;
+    gap: 40px;
+    margin: 7% 40px 0 40px;
+}
+
+.sale-card {
+    flex: 1;
+    height: 260px;
 }
 
 /* Text content */
@@ -323,34 +333,37 @@ ul {
 
 }
 
-/* Discount ribbon */
+/* ================= Discount Ribbon Proper Align ================= */
+
 .discount {
     position: relative;
     background: #ff9fb0;
     display: inline-block;
-    padding: 1px 32px;
-    margin-left: -14%;
+    padding: 6px 40px 6px 25px;
+    margin-left: -39px; 
 }
 
 .discount span {
-    font-size: 60px;
+    font-size: 55px;
     color: white;
     font-family: "Libre Baskerville", serif;
     font-weight: bold;
+    line-height: 1;
 }
 
-/* Ribbon cut effect */
-.discount::after {
+
+/* .discount::after {
     content: "";
     position: absolute;
-    right: -20px;
+    right: -25px;
     top: 0;
     width: 0;
     height: 0;
-    border-top: 35px solid transparent;
-    border-bottom: 35px solid transparent;
-    border-left: 20px solid #ff9fb0;
-}
+   border-top: 34px solid transparent;
+    border-bottom: 34px solid transparent;
+    border-left: 26px solid #ff9fb0;
+} */
+
 
 /* Flower (decorative) */
 .flower {
@@ -1855,4 +1868,10 @@ p {
     font-weight: 600 !important;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+/* ================================Login-page=============================== */
+.checkbox{
+    display: flex;
+    align-items: center;
 }

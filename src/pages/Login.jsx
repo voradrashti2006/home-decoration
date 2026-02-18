@@ -13,7 +13,10 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from '@mui/icons-material/X';
 import HomeIcon from '@mui/icons-material/Home';
+import Checkbox from '@mui/material/Checkbox';
+import Button from '@mui/material/Button';
 
+const label = { slotProps: { input: { 'aria-label': 'Checkbox demo' } } };
 
 function Login() {
     return (
@@ -21,6 +24,20 @@ function Login() {
             <Box className="hero-sec">
                 <Typography variant="h1">My Account</Typography>
             </Box>
+
+
+
+            <Typography variant="h3">LOGIN</Typography>
+            <p>Username or email address *</p>
+            <input type="text" />
+            <p>Password *</p>
+            <input type="text" />
+            <div className="checkbox">
+                <Checkbox {...label} /><p>Remember me</p><Button className="bttn">
+                    Log in
+                </Button>
+            </div>
+            <Typography variant="h6">Lost your password?</Typography>
 
 
 

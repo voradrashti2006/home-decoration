@@ -40,13 +40,13 @@ function App() {
       {/* <Shop></Shop> */}
       {/* <Contact></Contact> */}
       {/* <All></All> */}
-      <Login></Login>
+      {/* <Login></Login> */}
 
-      {/* <Router>
+      <Router>
         <Header></Header>
 
         <Switch>
-          <Route path="/Header"><Header /></Route>
+          {/* <Route path="/Header"><Header /></Route> */}
           <Route exact path="/"><All /></Route>
           <Route path="/About"><About /></Route>
           <Route path="/Gallery2"><Gallery2 /></Route>
@@ -54,11 +54,11 @@ function App() {
           <Route path="/Blog"><Blog /></Route>
           <Route path="/Shop"><Shop /></Route>
           <Route path="/Contact"><Contact /></Route>
-          <Route path="/Fotter"><Fotter /></Route>
+          {/* <Route path="/Fotter"><Fotter /></Route> */}
         </Switch>
 
         <Fotter></Fotter>
-      </Router> */}
+      </Router>
       
     </>
   );
