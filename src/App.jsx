@@ -54,6 +54,7 @@ function App() {
           <Route path="/Blog"><Blog /></Route>
           <Route path="/Shop"><Shop /></Route>
           <Route path="/Contact"><Contact /></Route>
+          <Route path="/Login"><Login /></Route>
           {/* <Route path="/Fotter"><Fotter /></Route> */}
         </Switch>
 

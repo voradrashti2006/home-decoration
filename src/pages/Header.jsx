@@ -107,7 +107,7 @@ function Header({ children }){
                     <ShoppingCartIcon className="cart-icon" />
                     {/* BUTTON */}
                     <Button className="bttn">
-                        Log in
+                        <Link to="/Login">Log in</Link>
                     </Button>
                 </Box>
 
